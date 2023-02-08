@@ -10,3 +10,21 @@
     
     clip-path: polygon(0 0, 75% 0%, 100% 50%, 100% 99%, 25% 100%, 0% 50%);
 }
+.contact::after,
+.overlay::after,
+footer::after{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(247, 246, 229,0.8);
+}
+.home-hero.overlay::after{
+    background-color: rgba(247, 246, 229,0.2);
+}
+.contact::after{
+    background-color: rgba(8, 95, 158,0.5);
+}

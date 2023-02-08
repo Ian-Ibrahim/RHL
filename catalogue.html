@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://kit.fontawesome.com/c5d17fdd58.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Renaissance Health Limited</title>
+</head>
+<body class="max-w-screen overflow-x-hidden">
+    
+    <nav class="px-2 py-3 bg-white border-gray-200 ">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="index.html" class="flex items-center ">
+            <img src="media/RHL_SUBMARK.svg" class="h-10 mr-3 sm:h-10" alt="Renaissance Health limited logo" />
+
+        </a>
+        <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            
+            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
+            <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">Home</a>
+            </li>
+            <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Products <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                    <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownLargeButton">
+                        <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('chemistry')">Chemistry</a>
+                        </li>
+                        <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('immunology')">Immunology</a>
+                        </li>
+                        <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('integratedImmunoChemistry')">Intergrated Immuno Chemistry</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('hematology')">Hematology</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('labAutomation')">Lab automation</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('informatics')">Informatics</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('pointOfCare')">Point of care</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </li>
+            <li>
+                <a href="about.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">About</a>
+            </li>
+            <li>
+                <a href="contact.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact</a>
+            </li>
+            <li>
+                <a href="downloads.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Downloads</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="home " class="relative">
+        <div class="home-hero overlay text-white h-[50vh] bg-[url('media/bg.jpg')] flex flex-wrap flex-col items-start justify-center bg-no-repeat bg-top bg-fixed bg-cover relative">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3 z-50  absolute mr-2 p-5  top-2/4">
+                <li class="inline-flex items-center ">
+                  <a href="index.html" class="inline-flex items-center text-xl font-medium text-white hover:text-[#FC6C18] ">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <div class="flex items-center">
+                    <svg aria-hidden="true" class="w-6 h-6 text-gray-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    <a href="#" class="ml-1 text-xl font-medium text-[#085F9E] md:ml-2 ">Catalogue</a>
+                  </div>
+                </li>
+               
+            </ol>  
+        </div>
+    </section>
+
+    <footer class="p-4 bg-white sm:p-6 bg-[url('media/bg-3.jpg')] bg-top bg-fixed bg-cover relative ">
+        <div class="md:flex md:justify-between z-50">
+            <div class="mb-6 md:mb-0 z-50">
+                <a href="#" class="flex items-center flex-wrap">
+                    <img src="media/rhl-bg-removed-blue.png" class="h-16 mr-3" alt="RHL Logo" />
+                    <p class="">Suppliers of Medical Laboratory & Other Healthcare Products</p>
+                    <a href="documents/iso-9001-2015.pdf" target="_blank">
+                        <img src="media/certification.png " class="w-72 p-5" alt="ISO certification logo">
+                    </a>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 z-50">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Quick links</h2>
+                    <ul class="text-gray-600">
+                        <li class="mb-4">
+                            <a href="about.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>About</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="catalogue.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Catalogue</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="contact.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Contact</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="downloads.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Downloads</a>
+                        </li>
+                    </ul>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Opening hours</h2>
+                    <ul class="text-gray-600">
+                        <li class="mb-4">
+                            <a >Mon-Fri 08:30am-04:30pm</a>
+                        </li>
+                        <li class="mb-4">
+                            <a  >Sat & Sun Closed</a>
+                        </li>
+                        <li class="mb-4">
+                            <a  >Public Holiday Closed</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Products</h2>
+                    <ul class="text-gray-600">
+                        <li class="mb-4">
+                            <a href="" class="footer-links hover:underline" onclick="openCategoryPage('chemistry')"><i class="fa-solid fa-arrow-right pr-2"></i>Chemistry</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="" class="footer-links hover:underline" onclick="openCategoryPage('immunology')"><i class="fa-solid fa-arrow-right pr-2"></i>Immunology</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="" class="footer-links hover:underline" onclick="openCategoryPage('integratedImmunoChemistry')"><i class="fa-solid fa-arrow-right pr-2"></i>Intergrated Immuno Chemistry</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="" class="footer-links hover:underline" onclick="openCategoryPage('hematology')"><i class="fa-solid fa-arrow-right pr-2"></i>Hematology</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="" class="footer-links hover:underline" onclick="openCategoryPage('laboratoryAutomation')"><i class="fa-solid fa-arrow-right pr-2"></i>Laboratory automation</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="" class="footer-links hover:underline" onclick="openCategoryPage('informatics')"><i class="fa-solid fa-arrow-right pr-2"></i>Informatics</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-links hover:underline"onclick="openCategoryPage('pointOfCare')"><i class="fa-solid fa-arrow-right pr-2"></i>Point of Care</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact Us</h2>
+                    <ul class="text-gray-600 ">
+                        <li class="mb-4">
+                            <a href="https://goo.gl/maps/5NdJt6xVfyQx4mQR9" class="hover:underline">Location: Alpha Centre Mombasa Rd, Godown No 70(A)</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Email:sales@RHL.co.ke</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="tel:+254-020-2252053" class="hover:underline">Phone:+2540202252053</a>
+                        </li>
+                        <li class="mb-4 ">
+                            <a href="tel:+254-020-2243586" class="hover:underline">+254-020-2243586</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center ">©  <span id="get-current-year"></span> <a href="index.html" class="hover:underline">Renaissance Health Limited</a>. All Rights Reserved. Designed by <a class="text-gray-900">Ian Okova</a>
+            </span>
+           
+        </div>
+    </footer>
+
+</body>
+</html>
+<script src="app.js"></script>

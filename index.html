@@ -16,15 +16,74 @@
     <title>Renaissance Health Limited</title>
 </head>
 <body class="max-w-screen overflow-x-hidden">
+    <nav class="px-2 py-3 bg-white border-gray-200 ">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="index.html" class="flex items-center ">
+            <img src="media/RHL_SUBMARK.svg" class="h-10 mr-3 sm:h-10" alt="Renaissance Health limited logo" />
+
+        </a>
+        <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            
+            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
+            <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">Home</a>
+            </li>
+            <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Products <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                    <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownLargeButton">
+                        <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('chemistry')">Chemistry</a>
+                        </li>
+                        <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('immunology')">Immunology</a>
+                        </li>
+                        <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('integratedImmunoChemistry')">Intergrated Immuno Chemistry</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('hematology')">Hematology</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('labAutomation')">Lab automation</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('informatics')">Informatics</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('pointOfCare')">Point of care</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </li>
+            <li>
+                <a href="about.html" class=" z-50 block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">About</a>
+            </li>
+            <li>
+                <a href="contact.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact</a>
+            </li>
+            <li>
+                <a href="downloads.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Downloads</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
     <section>
-        <div class="home-hero relative">
+        <div class="home-hero relative min-h-screen">
             <div>
                 <h1 class="text-xl">RHL</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quisquam recusandae ratione. Architecto consequuntur quos enim libero, tempore temporibus facere. Perspiciatis itaque quod delectus maiores ipsum, ratione saepe sequi nihil?</p>
             </div>
-            <div>
+            <!-- <div>
                 <div class="icon-hexagon w-[35rem] h-[30rem] bg-white m-2 flex justify-center items-center"><img class="w-max  bg-black  object-center object-cover" src="media/bg-5.jpg" alt=""></div>
-            </div>
+            </div> -->
             <a href="" class="absolute left-2/4 bottom-0  h-12 w-4 p-1 py-2 border-2 rounded-lg border-black border-solid flex justify-center">
                 <div class="rounded-full h-2 w-2 bg-black absolute animate-bounce"></div>
             </a>
@@ -36,11 +95,11 @@
                 <p class="text-center p-5 text-xl lg:w-[50vw]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, sit! Voluptate illum dolorem dignissimos nobis expedita impedit aliquam, magni tempore veritatis architecto, rem ullam excepturi accusamus vitae numquam mollitia. Quam.</p>
             </div>
             
-            <div class="about-container flex items-center flex-wrap justify-between min-h-screen p-5">
-                <div class="w-64">
+            <div class="about-container flex items-center flex-wrap justify-between   p-5">
+                <div class="w-64 lg:w-[30vw] flex items-center justify-center  w-full">
                     <img src="media/bg4.jpg" alt="Woman scientist" class="w-96  rounded-br-full rounded-bl-full">
                 </div>
-                <div class=" flex flex-wrap justify-between items-start">
+                <div class=" flex flex-wrap justify-between items-start lg:w-[50vw] p-5">
                     <h1 class="header-column text-base">About us</h1>
                     <h2 class="text-4xl basis-full">We are Renaissance Health Limited.</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error ad sunt veniam cum cupiditate impedit vero possimus eum praesentium nisi. Voluptatum sunt quam molestiae. Quia magni vel temporibus natus nam.</p>
@@ -50,8 +109,8 @@
         </div>
     </section>
     <section>
-        <div class="mission-statement   bg-[#085F9E] justify-center">
-            <h1 class="header-center text-4xl w-screen text-white">Mission statement</h1>
+        <div class="mission-statement   bg-[#085F9E] flex items-center justify-center flex-wrap p-5">
+            <h1 class="header-center text-4xl w-screen text-white basis-full text-center">Mission statement</h1>
             <div class="statement-cards flex flex-wrap items-center  p-4 min-w-screen justify-between ">
                 
                 <div class="statement-card card lg:w-3/12 m-1">
@@ -79,8 +138,8 @@
         </div>
     </section>
     <section>
-        <div class="services min-h-screen">
-            <h1 class="header-center text-4xl font-extrabold">Our services</h1>
+        <div class="services p-4 flex flex-wrap justify-center items-center">
+            <h1 class="header-center text-4xl font-extrabold basis-full text-center">Our services</h1>
             <div class="service-container flex justify-center items-center flex-wrap">
                 <div class="service-card card max-w-sm min-w-[25vw] min-h- p-6 m-4 bg-white border border-gray-200 rounded-lg shadow ">
                     <a href="#" class=" items-center flex justify-center w-full">
@@ -94,7 +153,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea velit expedita nesciunt sunt provident, iusto nulla iure vitae excepturi, laborum soluta voluptas a corrupti voluptatum dignissimos sed delectus dicta earum.</p>
                     </div>
                 </div>    
-                <div class="service-card card max-w-sm min-w-[25vw] min-h- p-6 m-4 bg-white border border-gray-200 rounded-lg shadow ">
+                <div class="service-card card max-w-sm min-w-[25vw] min-h- p-6 bg-white border border-gray-200 rounded-lg shadow ">
                     <a href="#" class=" items-center flex justify-center w-full">
                         <img class="rounded-t-lg w-28 h-28" src="media/icons/immunity.png" alt="immunty icon" />
                     </a>
@@ -122,12 +181,12 @@
         </div>
     </section>
     <section>
-        <div class="catalogue">
-            <h1 class="header-center text-4xl font-extrabold">Our catalogue</h1>
+        <div class="catalogue flex flex-wrap items-center justify-between">
+            <h1 class="header-center text-4xl font-extrabold text-center basis-full">Our catalogue</h1>
             <div class="catalogue-container flex lg:flex-row flex-col lg:min-h-[100vh] mt-4 ">
-                <div class="bg-[url('media/bg-2.jpg')]  bg-no-repeat  bg-center bg-cover  lg:w-2/4 w-full p-4 "></div>
-                <div class="flex justify-center items-center flex-wrap  lg:w-3/4">
-                    <div class="card max-w-sm min-w-[25vw] min-h- p-6 m-4 bg-white border border-gray-200 rounded-lg shadow " onclick="openCategoryPage('immunology')">
+                <div class="bg-[url('media/bg-2.jpg')]  bg-no-repeat  bg-center bg-cover lg:w-2/4 w-full p-4 min-h-[50vh] hidden lg:block"></div>
+                <div class="flex justify-center items-start flex-wrap  lg:w-3/4 py-5 ">
+                    <div class="card max-w-sm w-[15rem] min-h- p-6 bg-white h-96 border border-gray-200 flex items-center flex-wrap justify-between text-center" onclick="openCategoryPage('immunology')">
                         <a href="#" class=" items-center flex justify-center w-full">
                             <img class="rounded-t-lg w-28 h-28" src="media/icons/immunity.png" alt="immunty icon" />
                         </a>
@@ -144,7 +203,7 @@
                         </div>
                     </div>
                     
-                    <div onclick="openCategoryPage('chemistry')" class="card max-w-sm min-w-[25vw] p-6 m-4 bg-white border border-gray-200 rounded-lg shadow flex items-center flex-wrap justify-between text-center">
+                    <div onclick="openCategoryPage('chemistry')" class="card max-w-sm  w-[15rem] p-6 h-96 bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
                         <a href="#" class=" items-center flex justify-center w-full">
                             <img class="rounded-t-lg w-28 h-28" src="media/icons/chemistry.png" alt="chemistry icon" />
                         </a>
@@ -159,7 +218,7 @@
                             </a>
                         </div>
                     </div>
-                    <div onclick="openCategoryPage('IntergratedImmunoChemistry')" class="card max-w-sm min-w-[25vw] min-h- p-6 m-4 bg-white border border-gray-200 rounded-lg shadow flex items-center flex-wrap justify-between text-center">
+                    <div onclick="openCategoryPage('IntergratedImmunoChemistry')" class="card max-w-sm  w-[15rem] h-96 p-6  bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
                         <a href="#" class=" items-center flex justify-center w-full">
                             <img class="rounded-t-lg w-28 h-28" src="media/icons/intergrated-immunity.png" alt="intergrated immunity icon" />
                         </a>
@@ -174,7 +233,7 @@
                             </a>
                         </div>
                     </div>
-                    <div onclick="openCategoryPage('hematology')" class="card max-w-sm min-w-[25vw] p-6 m-4 bg-white border border-gray-200 rounded-lg shadow flex items-center flex-wrap justify-between text-center">
+                    <div onclick="openCategoryPage('hematology')" class="card max-w-sm w-[15rem] p-6 h-96 bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
                         <a href="#" class=" items-center flex justify-center w-full">
                             <img class="rounded-t-lg w-28 h-28" src="media/icons/hematology.png" alt="hematology icon" />
                         </a>
@@ -189,7 +248,7 @@
                             </a>
                         </div>
                     </div>
-                    <div onclick="openCategoryPage('laboratoryAutomation')" class="card max-w-sm min-w-[25vw] p-6 m-4 bg-white border border-gray-200 rounded-lg shadow flex items-center flex-wrap justify-between text-center">
+                    <div onclick="openCategoryPage('laboratoryAutomation')" class="card max-w-sm w-[15rem] h-96 p-6 bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
                         <a href="#" class=" items-center flex justify-center w-full">
                             <img class="rounded-t-lg w-28 h-28" src="media/icons/laboratory-assistant.png" alt="" />
                         </a>
@@ -204,7 +263,7 @@
                             </a>
                         </div>
                     </div>
-                    <div onclick="openCategoryPage('pointOfCare')" class="card max-w-sm min-w-[25vw] p-6 m-4 bg-white border border-gray-200 rounded-lg shadow flex items-center flex-wrap justify-between text-center">
+                    <div onclick="openCategoryPage('pointOfCare')" class="card max-w-sm w-[15rem] p-6 h-96  bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
                         <a href="#" class=" items-center flex justify-center w-full">
                             <img class="rounded-t-lg w-28 h-28" src="media/icons/sugar-blood-level.png" alt="" />
                         </a>
@@ -219,7 +278,7 @@
                             </a>
                         </div>
                     </div>
-                    <div onclick="openCategoryPage('labAccessories')" class="card max-w-sm min-w-[25vw] p-6 m-4 bg-white border border-gray-200 rounded-lg shadow flex items-center flex-wrap justify-between text-center">
+                    <div onclick="openCategoryPage('labAccessories')" class="card max-w-sm w-[15rem] p-6 h-96  bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
                         <a href="#" class=" items-center flex justify-center w-full">
                             <img class="rounded-t-lg w-28 h-28" src="media/icons/bioinformatics.png" alt="" />
                         </a>
@@ -233,13 +292,15 @@
                                 <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </a>
                         </div>
-                    </div>    
+                    </div>  
+                    <div class="w-[15rem]"></div>
+                    <div class="w-[15rem]"></div>  
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="partners bg-[#085F9E] text-center text-white">
+        <div class="partners bg-[#085F9E] text-center text-white flex flex-wrap justify-center items-center">
             <h1 class="header-center text-4xl">Our partners</h1>
             <div class="partners-container flex flex-wrap justify-center p-5">
                 <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" src="media/icons/lumira-logo-horizontal.jpg" alt=""></div>
@@ -248,27 +309,28 @@
         </div>
     </section>
     <section id="contact">
-        <div class="contact bg-[url('media/bg-contact.jpg')] bg-no-repeat h-[55vh] bg-cover bg-center flex justify-center flex-wrap items-center text-white">
+        <div class="contact relative bg-[url('media/bg-contact.jpg')] bg-no-repeat h-[55vh] bg-cover bg-center flex justify-center flex-wrap items-center text-white">
             <div class="text-center w-6/12 z-50">
                 <h2 class="text-4xl font-extrabold">Have any questions?</h2>
                 <p class="my-5">Contact us for any questions or concerns regarding our products. Our dedicated support team is available to assist you Monday to Friday, 9 AM to 5 PM</p>
-                <a href="contact.html" class=" bg-[#085F9E] p-3 text-gray-50 uppercase font-medium whitespace-nowrap">Connect with us</a>
+                <a href="contact.html" class=" rounded-full bg-[#085F9E] p-3 text-gray-50 uppercase font-medium whitespace-nowrap">Connect with us</a>
             </div>    
 
         </div>
     </section>
-    <footer class="p-4 bg-white sm:p-6 bg-[url('media/bg-3.jpg')] bg-top bg-fixed bg-cover ">
-        <div class="md:flex md:justify-between">
-            <div class="mb-6 md:mb-0">
+    <footer class="p-4  sm:p-6 bg-[url('media/bg-3.jpg')] bg-top bg-fixed bg-cover relative z-50 ">
+        
+        <div class="md:flex md:justify-between z-50">
+            <div class="mb-6 md:mb-0 z-50">
                 <a href="#" class="flex items-center flex-wrap">
-                    <img src="media/rhl-bg-removed-blue.png" class="h-8 mr-3" alt="RHL Logo" />
+                    <img src="media/rhl-bg-removed-blue.png" class="h-16 mr-3" alt="RHL Logo" />
                     <p class="">Suppliers of Medical Laboratory & Other Healthcare Products</p>
                     <a href="documents/iso-9001-2015.pdf" target="_blank">
                         <img src="media/certification.png " class="w-72 p-5" alt="ISO certification logo">
                     </a>
                 </a>
             </div>
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 z-50">
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Quick links</h2>
                     <ul class="text-gray-600">
@@ -282,19 +344,19 @@
                             <a href="contact.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Contact</a>
                         </li>
                         <li class="mb-4">
-                            <a href="downloads.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Download</a>
+                            <a href="downloads.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Downloads</a>
                         </li>
                     </ul>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Opening hours</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <a class="hover:underline">Mon-Fri 08:30am-04:30pm</a>
+                            <a >Mon-Fri 08:30am-04:30pm</a>
                         </li>
                         <li class="mb-4">
-                            <a  class="hover:underline">Sat & Sun Closed</a>
+                            <a  >Sat & Sun Closed</a>
                         </li>
                         <li class="mb-4">
-                            <a  class="hover:underline">Public Holiday Closed</a>
+                            <a  >Public Holiday Closed</a>
                         </li>
                         </li>
                     </ul>
@@ -355,3 +417,4 @@
 
 </body>
 </html>
+<script src="app.js"></script>

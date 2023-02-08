@@ -1,22 +1,193 @@
 [
 {    
-   "id":"",
-   "name": "",    
-   "category": "",    
-   "image": "media/products/",  
-   "manufacturer":"",
-   "readMoreLink":"",  
-   "downloadLink":"",
-   "description": "" 
+   "id":"1",
+   "name": "Alinity C",    
+   "category": "chemistry",    
+   "image": "media/products/alinity-c.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/alinity/alinity-ci-series.html",  
+   "downloadLink":"https://www.ams.ro/documents/280.pdf",
+   "description": "Maximizes testing throughput with high-quality assays to deliver efficient and accurate results for greater productivity.<br><b>Method:</b>Photometric,potentiometric.<br><b>Sample Type*:</b>Serum, plasma,urine,cerebrospinal fluid, hemolysate,whole.<br><b>Sample Capacity:</b>150<br><b>reagent capacity:</b>Up to 70<br><b>Maximum Throughput:</b>Up to 1,350 tests/hour." 
 },
 {    
-   "id":"",
-   "name": "",    
-   "category": "",    
+   "id":"2",
+   "name": "Architect c4000",    
+   "category": "chemistry",    
+   "image": "media/products/c4000.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/architect/architect-c4000.html",  
+   "downloadLink":"https://cdn.pepperapps.io/diagnostics-cms/public/5fc549120bc133350e910860?signature=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..sOpYOs97DOUIXCrbYACHAg.eFme2LJj_5YS0-zGx34yIPSGuz8urpdWwZuxojzSsmvkPPB1xmxwT6rwTeMQBsteqhKdWNGcBhJtDyXGYd9Ly0iDhvG_qA5jGYUfvwZFlSvFEqw0-Va2SE_OlaUru_2DdCpuroEBgH7oXj5pd88hKM0eiLzSQjlW3PaH-_mUFLK930qmcQcQyymQqQFtHNlJ.oIoycVemSs3FlC9NbCAkIg",
+   "description": "The ARCHITECT c4000 clinical chemistry analyzer demonstrates high-quality testing results and rapid STAT turnaround time. The ARCHITECT c4000 enhances laboratory productivity and provides users high confidence in clinical results.<br>The ARCHITECT c4000 offers a maximum throughput of up to 800 tests per hour. Featuring a load-up capacity of 100 samples with 35 priority positions, the ARCHITECT c4000 allows for up to 90 refrigerated reagent positions on board, plus Integrated Chip Technology (Na+, K+ and Cl-).<br>For in vitro diagnostic use only." 
+}
+,
+{    
+   "id":"3",
+   "name": "ARCHITECT i1000SR",    
+   "category": "immunology",    
+   "image": "media/products/architect-i1000.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/architect/architect-i1000SR.html",  
+   "downloadLink":"https://cdn.pepperapps.io/diagnostics-cms/public/5fc549120bc133350e910860?signature=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..sOpYOs97DOUIXCrbYACHAg.eFme2LJj_5YS0-zGx34yIPSGuz8urpdWwZuxojzSsmvkPPB1xmxwT6rwTeMQBsteqhKdWNGcBhJtDyXGYd9Ly0iDhvG_qA5jGYUfvwZFlSvFEqw0-Va2SE_OlaUru_2DdCpuroEBgH7oXj5pd88hKM0eiLzSQjlW3PaH-_mUFLK930qmcQcQyymQqQFtHNlJ.oIoycVemSs3FlC9NbCAkIg",
+   "description": "The ARCHITECT i1000SR immunoassay analyzer meets your laboratory’s high standards by delivering STAT results when you need them. The flexible protocols built into the ARCHITECT i1000SR enhance laboratory workflow and allow you to report results with confidence.<br. For in vitro diagnostic use only." 
+},
+{    
+   "id":"4",
+   "name": "ARCHITECT ci4100",    
+   "category": "integratedImmunoChemistry",    
+   "image": "media/products/architect-ci4100.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/architect/architect-ci4100.html",  
+   "downloadLink":"https://cdn.pepperapps.io/diagnostics-cms/public/5fc549120bc133350e910860?signature=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..sOpYOs97DOUIXCrbYACHAg.eFme2LJj_5YS0-zGx34yIPSGuz8urpdWwZuxojzSsmvkPPB1xmxwT6rwTeMQBsteqhKdWNGcBhJtDyXGYd9Ly0iDhvG_qA5jGYUfvwZFlSvFEqw0-Va2SE_OlaUru_2DdCpuroEBgH7oXj5pd88hKM0eiLzSQjlW3PaH-_mUFLK930qmcQcQyymQqQFtHNlJ.oIoycVemSs3FlC9NbCAkIg",
+   "description": "The ARCHITECT ci4100 combines ARCHITECT c4000 and ARCHITECT i1000SR instruments − offering lower volume laboratories the enhanced efficiency and productivity employed by larger volume laboratories.<br>For in vitro diagnostic use only." 
+},
+{    
+   "id":"5",
+   "name": "ACCELERATOR a3600",    
+   "category": "labAutomation",    
+   "image": "media/products/accelerator-a3600.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/accelerator/a3600.html#:~:text=The%20ACCELERATOR%20a3600%20is%20a,today%20and%20in%20the%20future.",  
+   "downloadLink":"https://docplayer.net/51767151-Accelerator-a3600-total-laboratory-automation-from-an-automation-leader.html",
+   "description": "The ACCELERATOR a3600 is a total laboratory automation system that provides the power and flexibility to meet the needs of the laboratory, both today and in the future. Combined with informatics and lean principles, the ACCELERATOR a3600 maximizes efficiency by providing consistent, predictable sample management and helps improve patient care by minimizing opportunities for error.<br>The modular design of ACCELERATOR a3600 allows you to create a design that is customized to fit your laboratory. The ACCELERATOR a3600 offers open third party analyzer connectivity* which provides the flexibility to meet changing demands.<br>Our workflow specialists work closely with you to understand your operations, needs and goals. We use a stepwise approach, including goal identification and understanding, process and system design, 3D visualization, CAD generation, and solution realization." 
+},
+{    
+   "id":"6",
+   "name": "Alinity hq",    
+   "category": "hematology",    
+   "image": "media/products/alinity-hq.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/alinity/Alinity-h-hematology-system.html",  
+   "downloadLink":"https://amlr.medical-congresses.ro/wp-content/uploads/2020/09/abbott-alinity-h-series-hq-hs-hq-spec-sheet.pdf",
+   "description": "Compact hematology system enabling laboratories to run at maximum efficiency." 
+},
+{    
+   "id":"7",
+   "name": "ALINITY hs",    
+   "category": "hematology",    
+   "image": "media/products/alinity-hs.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/alinity/Alinity-h-hematology-system.html",  
+   "downloadLink":"https://amlr.medical-congresses.ro/wp-content/uploads/2020/09/abbott-alinity-h-series-hq-hs-hq-spec-sheet.pdf",
+   "description": "A compact slidemaker stainer system for an automated workflow that delivers consistency." 
+},
+{    
+   "id":"8",
+   "name": "CELL-DYN RUBY",    
+   "category": "hematology",    
+   "image": "media/products/cell-dyn-ruby.jpg",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/cell-dyn/cell-dyn-ruby.html#:~:text=The%20CELL%2DDYN%20Ruby%20allows,among%20all%20your%20laboratory%20personnel.",  
+   "downloadLink":"https://hematologyacademy.com/wp-content/uploads/2021/04/ADD-00056700-CELL-DYN-RUBY-brochure.pdf",
+   "description": "For reliable performance that leads to quality results—the first time—CELL-DYN Ruby delivers and outperforms similar tools. With advanced capabilities for the medium-sized laboratory, you can process more complete blood counts in less time.<br>The CELL-DYN Ruby reduces the need for microscopic blood smear reviews and repeat testing. Optical technology allows you to allocate resources and ultimately improve your laboratory's efficiency." 
+},
+{    
+   "id":"9",
+   "name": "CELL-DYN EMERALD 18",    
+   "category": "hematology",    
+   "image": "media/products/CELL-DYN-Emerald-18.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/cell-dyn/cell-dyn-emerald.html",  
+   "downloadLink":"",
+   "description": "As a laboratory professional in a small hospital or clinic laboratory, your need for greater efficiency and productivity—done quickly under tighter space limitations—is more important than ever.<br>CELL-DYN Emerald provides you with proven methods and technology, including electronic impedance, absorption spectrophotometry, electronic valves, cyanide-free lyse reagent, LCD color touch screen and USB ports.<br>For in vitro diagnostic use only." 
+},
+{    
+   "id":"10",
+   "name": "CELL-DYN EMERALD 22                 ",    
+   "category": "hematology",    
+   "image": "media/products/cell-dyn-emerald-22-small-hematology-analyzer.jpg",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/cell-dyn/cell-dyn-emerald22.html",  
+   "downloadLink":"https://dipylonmedical.com/wp-content/uploads/2021/08/cell-dyn-emerald-22-Brochure-Diplyon-Medical.pdf",
+   "description": "With reduced budgets, shrinking laboratory space and less qualified medical staff, many laboratories need a solution that lets them do more with less. The CELL-DYN Emerald 22 is a full performance hematology analyzer for smaller clinical laboratories seeking better productivity with small spaces.<br>For in vitro diagnostic use only. " 
+},
+{    
+   "id":"11",
+   "name": "AlinIQ",    
+   "category": "informatics",    
+   "image": "media/products/informatics.jpg",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/aliniq.html",  
+   "downloadLink":"",
+   "description": "About 40% of technology projects are abandoned and/or fail.1 Without world-class support, solution optimization is only a dream. Aligned with your goals, our Digital Health Solutions experts, along with our robust processes and informatics enablers, help you look at your enterprise in a whole new light, propelling you ahead of the ever-changing health care ecosystem." 
+},
+{    
+   "id":"12",
+   "name": "AlinIQ Always On",    
+   "category": "informatics",    
+   "image": "media/products/informatics.jpg",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/aliniq/aliniq-always-on.html",  
+   "downloadLink":"",
+   "description": "AlinIQ Always On Services (Always On) utilizes Active Sense Technologies™, Resourceful Advocates and Disciplined Processes to offer instrument health monitoring that enables your laboratory to achieve operational efficiency and increased productivity." 
+},
+{    
+   "id":"13",
+   "name": "AlinIQ Pre-Analytics",    
+   "category": "informatics",    
+   "image": "media/products/aliniq-pre-analytics.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"",  
+   "downloadLink":"",
+   "description": "<h1 class='text-3xl'>AlinIQ Pre-analytics powered by indexor.<h1><br><h2 class='text-gray-600'>Streamline and automate sample tracking  for better results<h2>AlinIQ powered by indexor helps you optimize and scale your pre-analytics processes." 
+},
+{    
+   "id":"14",
+   "name": "AlinIQ IMS",    
+   "category": "informatics",    
+   "image": "media/products/informatics.jpg",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"",  
+   "downloadLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/aliniq/aliniq-ims.html",
+   "description": "<h1 class='text-3xl'>AlinIQ Inventory Management System.<h1><br><h2 class='text-gray-600'>optimize inventory and ensure product availability</h2><br>Laboratory supply chain management is often inefficient and time consuming. Manual inventory tracking increases labor time and errors. Unknown inventory status results in shortages of critical items or overstocks and waste. Shortages of inventory may impact timely patient care. " 
+},
+{    
+   "id":"15",
+   "name": "AlinIQ AMS",    
+   "category": "informatics",    
+   "image": "media/products/aliniq-ams-wheel-image.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/aliniq/aliniq-ams.html",  
+   "downloadLink":"",
+   "description": "<h1 class='text-3xl'>AlinIQ Analyzer Management System.<h1><br><h2 class='text-gray-600'>Expert middleware to better manage the flow of critical data throughout your laboratory</h2>Data housed in multiple, disparate laboratory IT systems make it difficult to capture the information you need to drive efficiency. This can result in fragmented processes. What if you could harmonize the data from virtually any LIS, analyzer or automation system across your entire institution? " 
+},
+{    
+   "id":"16",
+   "name": "AlinIQ BIS",    
+   "category": "informatics",    
+   "image": "media/products/aliniq-bis-wheel.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"",  
+   "downloadLink":"",
+   "description": "<h1 class='text-3xl'>AlinIQ Business Intelligence Software.<h1><br><h2 class='text-gray-600'>More than business intelligence software-A strategy</h2>Today's laboratories face unprecedented changes: increased demand and workload with fewer staff and declining budgets, plus pressure to increase quality under tightened restrictions. Watch the video and see how AlinIQ BIS, the Business Intelligence System from Abbott, can help focus your organization on the right key performance indicators (KPIs)." 
+},
+{    
+   "id":"17",
+   "name": "AlinIQ CDS",    
+   "category": "informatics",    
+   "image": "media/products/aliniq-cds-wheel-image.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/aliniq/aliniq-cds.html",  
+   "downloadLink":"",
+   "description": "<h1 class='text-3xl'>AlinIQ CLINICAL DECISION SUPPORT<h1><h2 class='text-gray-600'>patient-centric decision support for enhanced clinical management.</h2> <br>The amount of data and new technologies available to health care providers today represents a great opportunity to increase quality of care while maximizing efficiency. Still, the enormous amount of patient information available can be challenging for providers, especially when they are pressed for time and need to make rapid and accurate decisions." 
+},{    
+   "id":"18",
+   "name": "Lumira Dx™",    
+   "category": "pointOfCare",    
+   "image": "media/products/lumira.jpeg",  
+   "manufacturer":"lumira",
+   "subCategorySet":"1",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/instrument",  
+   "downloadLink":"https://www.lumiradx.com/assets/pdfs/lumiradx-platform/lumiradx-platform-specifications-english.pdf",
+   "description": "Introducing our LumiraDx Platform, a high sensitivity point of care diagnostic system. Combining a small, portable Instrument; microfluidic Test Strip; simple, standardized workflow; and seamless, secure digital connectivity to the Cloud and hospital IT systems<br>Integrates several technologies and sample types into a single Instrument, allowing for a continued development of a broad test menu across conditions diagnosed and managed in community-based healthcare settings.Replaces multiple point of care systems with a single Platform, increasing efficiency through reduced training, equipment, maintenance and test supplies. Currently offering COVID-19, CRP, D-Dimer, Flu, HbA1c, INR, NT-proBNP and RSV test capabilities, with a pipeline of over 30 tests across a range of assay technologies including enzyme, immunoassay, molecular and electrolyte assays. All carried out on one, easy to use device.<br>LumiraDx’s next generation, point of care diagnostic Platform is designed to be affordable and accessible for healthcare providers globally and intends to strengthen community-based healthcare.<br>Leverages testing methodologies used in lab analyser systems, enabling healthcare providers to deliver lab-comparable performance and real-time results at the point of care." 
+},{    
+   "id":"19",
+   "name": "Lumira Dx™",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
    "image": "media/products/",  
    "manufacturer":"",
    "readMoreLink":"",  
    "downloadLink":"",
-   "description": "" 
+   "description":""
 }
 ]
