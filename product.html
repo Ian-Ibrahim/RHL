@@ -50,7 +50,7 @@
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('hematology')">Hematology</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('laboratotyAutomation')">Lab automation</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('laboratoryAutomation')">Lab automation</a>
                         </li>
                         <li>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('informatics')">Informatics</a>
@@ -165,21 +165,21 @@
                     const otherProduct = otherProducts[otherProductIndex];
                     const otherProductItem = document.createElement('div');
                     otherProductItem.innerHTML = `
-                    
-                    <div  onclick="openProductPage('${otherProduct.id}')" class="card w-[20em] min-h-[25rem] max-h-[50vh] m-2 text-center bg-white border border-gray-200 rounded-lg shadow "  > 
-                        <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#1E1E24] ">${otherProduct.name}</h5>
-                        </a>
-                        <a href="#" class="bg-blue-500 w-full">
-                            <img class="rounded-t-lg w-full h-56 p-6 object-center object-contain" src="${otherProduct.image}" alt="${otherProduct.name}" />
-                        </a>
-                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center  rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
-                            Find out more
-                            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </a>
+                    <div onclick="openProductPage('${otherProduct.id}')"class="m-3 product-container card w-[20rem] h-[28rem]  flex flex-wrap items-center relative">
+                        <div class="product-image-container w-full bg-black/[10%] flex items-center">
+                            <img class="h-64 object-center object-contain p-2 w-full" src="${otherProduct.image}" alt="${otherProduct.name}">
+                        </div>
+                        <div class="product-desc p-2 py-10 ">
+                            <h2>Abbott</h2>
+                            <h2 class="font-bold relative text-2xl">${otherProduct.name}</h2>
+                            
+                        </div>
+                        <div class="icon-hexagon absolute left-2 bottom-[7.5rem] w-24 h-24 p-4  bg-gray-100 m-2 flex justify-center items-center">
+                            <img classs="w-32 h-64 object-center object-contain" src="media/icons/${otherProduct.category}.png" alt="">
+                            
+                        </div>
                     </div>
-                    </div>
+
                     `;
                     otherProductsList.appendChild(otherProductItem);
                     otherProductIndex++;

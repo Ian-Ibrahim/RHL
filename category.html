@@ -51,7 +51,7 @@
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('hematology')">Hematology</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('laboratotyAutomation')">Lab automation</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('laboratoryAutomation')">Lab automation</a>
                         </li>
                         <li>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('informatics')">Informatics</a>
@@ -97,7 +97,7 @@
     <section class="p-10">
         <h1 class="text-4xl font-extrabold " id="categoryName">Our catalogue</h1>
         <div class="flex flex-wrap -mx-3 min-h-screen flex justify-center items-center flex-wrap" id="product-container">
-    
+            
         </div>
         <!-- Loading indicator -->
         <div class="flex items-center justify-center" id="loading">
@@ -127,23 +127,20 @@
             // Generate the product cards for the batch of products
             const productCards = batchProducts.map(product => {
                 return `
-                
-                    <div  onclick="openProductPage('${product.id}')" class="card max-w-sm min-w-[25vw] h-[50vh] m-4 text-center bg-white border border-gray-200 rounded-lg shadow ">
-                        
-                        <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#1E1E24] ">${product.name}</h5>
-                            </a>
-                            <a href="#" class="bg-blue-500 w-full">
-                                <img class="rounded-t-lg w-full max-h-64 p-6 object-center object-contain" src="${product.image}" alt="${product.name}" />
-                            </a>
-                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center  rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                Find out more
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            </a>
-                        </div>
+                <div onclick="openProductPage('${product.id}')"class="m-3 product-container card w-[20rem] h-[28rem]  flex flex-wrap items-center relative">
+                    <div class="product-image-container w-full bg-black/[10%] flex items-center">
+                        <img class="h-64 object-center object-contain p-2 w-full" src="${product.image}" alt="${product.name}">
                     </div>
-        
+                    <div class="product-desc p-2 py-10 ">
+                        <h2>Abbott</h2>
+                        <h2 class="font-bold relative text-2xl">${product.name}</h2>
+                        
+                    </div>
+                    <div class="icon-hexagon absolute left-2 bottom-[7.5rem] w-24 h-24 p-4  bg-gray-100 m-2 flex justify-center items-center">
+                        <img classs="w-32 h-64 object-center object-contain" src="media/icons/${product.category}.png" alt="">
+                        
+                    </div>
+                </div>
                 `;
             }).join('');
             var result = "";
@@ -184,7 +181,8 @@
             };
         </script>
 
-    </section>
+    </section>  
+
     <footer class="p-4 bg-white sm:p-6 bg-[url('media/bg-3.jpg')] bg-top bg-fixed bg-cover relative ">
         <div class="md:flex md:justify-between relative z-50">
             <div class="mb-6 md:mb-0 z-50">
