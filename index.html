@@ -76,15 +76,16 @@
         </div>
     </nav>
     <section>
-        <div class="home-hero relative min-h-screen">
-            <div>
+        <div class="home-hero relative min-h-screen flex flex-wrap">
+            <div class="lg:w-2/4">
                 <h1 class="text-xl">RHL</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quisquam recusandae ratione. Architecto consequuntur quos enim libero, tempore temporibus facere. Perspiciatis itaque quod delectus maiores ipsum, ratione saepe sequi nihil?</p>
             </div>
+            <div class="bg-[url('media/bg-5.jpg')] bg-center bg-cover min-h-screen w-full lg:w-2/4 p-2" ></div>
             <!-- <div>
                 <div class="icon-hexagon w-[35rem] h-[30rem] bg-white m-2 flex justify-center items-center"><img class="w-max  bg-black  object-center object-cover" src="media/bg-5.jpg" alt=""></div>
             </div> -->
-            <a href="" class="absolute left-2/4 bottom-0  h-12 w-4 p-1 py-2 border-2 rounded-lg border-black border-solid flex justify-center">
+            <a href="" class="absolute left-[48%] bottom-20 h-12 w-4 p-1 py-2 border-2 rounded-lg border-black border-solid flex justify-center">
                 <div class="rounded-full h-2 w-2 bg-black absolute animate-bounce"></div>
             </a>
         </div>
@@ -113,21 +114,21 @@
             <h1 class="header-center text-4xl w-screen text-white basis-full text-center">Mission statement</h1>
             <div class="statement-cards flex flex-wrap items-center  p-4 min-w-screen justify-between ">
                 
-                <div class="statement-card card lg:w-3/12 m-1">
+                <div class="statement-card  lg:w-3/12 m-1">
                     <div class="icon-hexagon w-48 h-40  m-2 flex justify-center items-center bg-[#070707]/[0.5] ">
                         <img class="w-32 h-64 object-center object-contain p-2" src="media/icons/mission.png" alt="">
                     </div>
                     <h2 class="font-extrabold text-white">Mission</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet dolore numquam deleniti odit eligendi dignissimos odio praesentium unde reprehenderit quasi accusantium blanditiis sit tempora atque corrupti, at possimus alias laborum.</p>
                 </div>
-                <div class="statement-card card lg:w-3/12 m-1">
+                <div class="statement-card  lg:w-3/12 m-1">
                     <div class=" icon-hexagon w-48 h-40  m-2 flex justify-center items-center bg-[#070707]/[0.5]">
                         <img class="w-32 h-64 object-center object-contain p-2" src="media/icons/vision.png"  alt="vision icon">
                     </div>
                     <h2 class="font-extrabold text-white">Vision</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates vitae aspernatur soluta quod minima architecto et veritatis accusamus iusto nam laborum, magni earum libero possimus est, at magnam in id!</p>
                 </div>
-                <div class="statement-card card lg:w-3/12 m-1">
+                <div class="statement-card  lg:w-3/12 m-1">
                     <div class="icon-hexagon w-48 h-40  m-2 flex justify-center items-center bg-[#070707]/[0.5]">
                         <img class="w-32 h-64 object-center object-contain p-2"src="media/icons/goal.png" alt="goal icon">
                     </div>
@@ -143,7 +144,7 @@
             <div class="service-container flex justify-center items-center flex-wrap">
                 <div class="service-card card max-w-sm min-w-[25vw] min-h- p-6 m-4 bg-white border border-gray-200 rounded-lg shadow ">
                     <a href="#" class=" items-center flex justify-center w-full">
-                        <img class="rounded-t-lg w-28 h-28" src="media/icons/immunity.png" alt="immunty icon" />
+                        <img class="rounded-t-lg w-28 h-28" src="media/icons/immunology.png" alt="immunty icon" />
                     </a>
                     <div class="basis-full h-0"></div>
                     <div class="p-5 text-center  w-full">
@@ -155,7 +156,7 @@
                 </div>    
                 <div class="service-card card max-w-sm min-w-[25vw] min-h- p-6 bg-white border border-gray-200 rounded-lg shadow ">
                     <a href="#" class=" items-center flex justify-center w-full">
-                        <img class="rounded-t-lg w-28 h-28" src="media/icons/immunity.png" alt="immunty icon" />
+                        <img class="rounded-t-lg w-28 h-28" src="media/icons/immunology.png" alt="immunty icon" />
                     </a>
                     <div class="basis-full h-0"></div>
                     <div class="p-5 text-center  w-full">
@@ -167,7 +168,7 @@
                 </div>      
                 <div class="service-card card max-w-sm min-w-[25vw] min-h- p-6 m-4 bg-white border border-gray-200 rounded-lg shadow ">
                     <a href="#" class=" items-center flex justify-center w-full">
-                        <img class="rounded-t-lg w-28 h-28" src="media/icons/immunity.png" alt="immunty icon" />
+                        <img class="rounded-t-lg w-28 h-28" src="media/icons/immunology.png" alt="immunty icon" />
                     </a>
                     <div class="basis-full h-0"></div>
                     <div class="p-5 text-center  w-full">
@@ -188,7 +189,7 @@
                 <div class="flex justify-center items-start flex-wrap  lg:w-3/4 py-5 ">
                     <div class="card max-w-sm w-[15rem] min-h- p-6 bg-white h-96 border border-gray-200 flex items-center flex-wrap justify-between text-center" onclick="openCategoryPage('immunology')">
                         <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/immunity.png" alt="immunty icon" />
+                            <img class="rounded-t-lg w-28 h-28" src="media/icons/immunology.png" alt="immunty icon" />
                         </a>
                         <div class="basis-full h-0"></div>
                         <div class="p-5 text-center  w-full">
@@ -220,7 +221,7 @@
                     </div>
                     <div onclick="openCategoryPage('IntergratedImmunoChemistry')" class="card max-w-sm  w-[15rem] h-96 p-6  bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
                         <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/intergrated-immunity.png" alt="intergrated immunity icon" />
+                            <img class="rounded-t-lg w-28 h-28" src="media/icons/integratedImmunoChemistry.png" alt="intergrated immunity icon" />
                         </a>
                         <div class="basis-full h-0"></div>
                         <div class="p-5 text-center  w-full">
@@ -250,7 +251,7 @@
                     </div>
                     <div onclick="openCategoryPage('laboratoryAutomation')" class="card max-w-sm w-[15rem] h-96 p-6 bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
                         <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/laboratory-assistant.png" alt="" />
+                            <img class="rounded-t-lg w-28 h-28" src="media/icons/laboratoryAutomation.png" alt="" />
                         </a>
                         <div class="basis-full h-0"></div>
                         <div class="p-5 text-center  w-full">
@@ -265,7 +266,7 @@
                     </div>
                     <div onclick="openCategoryPage('pointOfCare')" class="card max-w-sm w-[15rem] p-6 h-96  bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
                         <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/sugar-blood-level.png" alt="" />
+                            <img class="rounded-t-lg w-28 h-28" src="media/icons/pointOfCare.png" alt="" />
                         </a>
                         <div class="basis-full h-0"></div>
                         <div class="p-5 text-center  w-full">
@@ -280,7 +281,7 @@
                     </div>
                     <div onclick="openCategoryPage('labAccessories')" class="card max-w-sm w-[15rem] p-6 h-96  bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
                         <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/bioinformatics.png" alt="" />
+                            <img class="rounded-t-lg w-28 h-28" src="media/icons/informatics.png" alt="" />
                         </a>
                         <div class="basis-full h-0"></div>
                         <div class="p-5 text-center  w-full">
