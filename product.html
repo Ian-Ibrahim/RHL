@@ -50,7 +50,7 @@
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('hematology')">Hematology</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('labAutomation')">Lab automation</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('laboratotyAutomation')">Lab automation</a>
                         </li>
                         <li>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('informatics')">Informatics</a>
@@ -86,27 +86,15 @@
                 <li>
                   <div class="flex items-center">
                     <svg aria-hidden="true" class="w-6 h-6 text-gray-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                    <a href="#" class="ml-1 text-xl font-medium text-[#085F9E] md:ml-2 ">Contact</a>
+                    <a href="#" class="ml-1 text-xl font-medium text-[#085F9E] md:ml-2 ">product</a>
                   </div>
                 </li>
                
             </ol>  
         </div>
     </section>
-    <!-- Container for the product cards -->
-<div class="flex flex-wrap -mx-3" id="product-container"></div>
-<!-- Loading indicator -->
-<div class="flex items-center justify-center" id="loading">
-  <div class="spinner ">
-    <div role="status">
-        <svg aria-hidden="true" class="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
-            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
-        </svg>
-        <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-</div>
+
+
 <!-- JavaScript to generate the product cards -->
 <script>
     // Get the category from the query parameter
@@ -146,9 +134,11 @@
         productDescription.innerHTML = selectedProduct.description;
 
         if(selectedProduct.hasOwnProperty('subCategorySet')){
-            document.getElementById('subCategoryBtn').innerText="View  test menu";
+            document.getElementById('subCategoryBtn').innerHTML=`Explore  test menu <svg aria-hidden='true' class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg> `;
         }
-
+        if(selectedProduct.hasOwnProperty('secondaryImage')){
+            document.getElementById('secondary-image').src=selectedProduct.secondaryImage;
+        }
         document.getElementById('loading').style.display = 'none';
     }
     // Load the  product
@@ -201,9 +191,21 @@
         });
 
 </script>
-<div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6 ">
-    <div class="flex items-center justify-center">
+<div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6 relative">
+    <div class="flex items-center justify-center bg-white absolute top-0 bottom-0 left-0 right-0 p-5 " id="loading">
+        <div class="spinner ">
+        <div role="status">
+            <svg aria-hidden="true" class="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+            </svg>
+            <span class="sr-only">Loading...</span>
+        </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-center flex-wrap">
         <img class="w-96 h-96 object-contain object-center" id="product-image">
+        
     </div>
     
     <div class="font-light pt-6 sm:text-lg">
@@ -214,8 +216,12 @@
         <a href="#" id="read-more" target="_blank" class="btn-primary rounded-full  mt-5 bg-[#085F9E] text-white p-3">Read more   </a>
         <br>
         <a href="#" target="_blank" id="download-brochure"class=" inline-flex items-center px-2 py-2  mt-2 hover:underline">    </a>
-        <a href="#"  id="subCategoryBtn"class=" inline-flex items-center px-2 py-2  mt-2 hover:underline">    </a>
+        <br>
+        <a href="subCategory.html"  id="subCategoryBtn"class=" inline-flex items-center px-2 py-2  mt-2 hover:underline" > </a>
     </div>
+</div>
+<div class="flex items-center  justify-center">
+    <img src="" alt="" class="w-64" id="secondary-image">
 </div>
 <section class="p-10">
     <h1 class="text-4xl font-extrabold header-center" id="categoryName">Other products in <span id="category-name"></span></h1>
@@ -223,101 +229,102 @@
         <div class="-mx-3 text-xl" id="noProducts">No other products in this category</div>
     </div>
 </section>
-    <footer class="p-4 bg-white sm:p-6 bg-[url('media/bg-3.jpg')] bg-top bg-fixed bg-cover relative ">
-        <div class="md:flex md:justify-between z-50">
-            <div class="mb-6 md:mb-0 z-50">
-                <a href="#" class="flex items-center flex-wrap">
-                    <img src="media/rhl-bg-removed-blue.png" class="h-16 mr-3" alt="RHL Logo" />
-                    <p class="">Suppliers of Medical Laboratory & Other Healthcare Products</p>
-                    <a href="documents/iso-9001-2015.pdf" target="_blank">
-                        <img src="media/certification.png " class="w-72 p-5" alt="ISO certification logo">
-                    </a>
+<footer class="p-4 bg-white sm:p-6 bg-[url('media/bg-3.jpg')] bg-top bg-fixed bg-cover relative ">
+    <div class="md:flex md:justify-between relative z-50">
+        <div class="mb-6 md:mb-0 z-50">
+            <a href="index.html" class="flex items-center flex-wrap">
+                <img src="media/rhl-bg-removed-blue.png" class="h-16 mr-3" alt="RHL Logo" />
+                <p class="">Suppliers of Medical Laboratory & Other Healthcare Products</p>
+                <a href="documents/iso-9001-2015.pdf" target="_blank">
+                    <img src="media/certification.png " class="w-72 p-5" alt="ISO certification logo">
                 </a>
+            </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 z-50">
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Quick links</h2>
+                <ul class="text-gray-600">
+                    <li class="mb-4">
+                        <a href="about.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>About</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="catalogue.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Catalogue</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="contact.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Contact</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="downloads.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Downloads</a>
+                    </li>
+                </ul>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Opening hours</h2>
+                <ul class="text-gray-600">
+                    <li class="mb-4">
+                        <a >Mon-Fri 08:30am-04:30pm</a>
+                    </li>
+                    <li class="mb-4">
+                        <a  >Sat & Sun Closed</a>
+                    </li>
+                    <li class="mb-4">
+                        <a  >Public Holiday Closed</a>
+                    </li>
+                    </li>
+                </ul>
             </div>
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 z-50">
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Quick links</h2>
-                    <ul class="text-gray-600">
-                        <li class="mb-4">
-                            <a href="about.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>About</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="catalogue.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Catalogue</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="contact.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Contact</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="downloads.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Downloads</a>
-                        </li>
-                    </ul>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Opening hours</h2>
-                    <ul class="text-gray-600">
-                        <li class="mb-4">
-                            <a >Mon-Fri 08:30am-04:30pm</a>
-                        </li>
-                        <li class="mb-4">
-                            <a  >Sat & Sun Closed</a>
-                        </li>
-                        <li class="mb-4">
-                            <a  >Public Holiday Closed</a>
-                        </li>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Products</h2>
-                    <ul class="text-gray-600">
-                        <li class="mb-4">
-                            <a href="" class="footer-links hover:underline "><i class="fa-solid fa-arrow-right pr-2"></i>Chemistry</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="" class="footer-links hover:underline "><i class="fa-solid fa-arrow-right pr-2"></i>Immunology</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="" class="footer-links hover:underline "><i class="fa-solid fa-arrow-right pr-2"></i>Intergrated Immune Chemistry</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="" class="footer-links hover:underline "><i class="fa-solid fa-arrow-right pr-2"></i>Hematology</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="" class="footer-links hover:underline "><i class="fa-solid fa-arrow-right pr-2"></i>Laboratory automation</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="" class="footer-links hover:underline "><i class="fa-solid fa-arrow-right pr-2"></i>Informatics</a>
-                        </li>
-                        <li>
-                            <a href="" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Point of Care</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact Us</h2>
-                    <ul class="text-gray-600 ">
-                        <li class="mb-4">
-                            <a href="https://goo.gl/maps/5NdJt6xVfyQx4mQR9" class="hover:underline">Location: Alpha Centre Mombasa Rd, Godown No 70(A)</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Email:sales@RHL.co.ke</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="tel:+254-020-2252053" class="hover:underline">Phone:+2540202252053</a>
-                        </li>
-                        <li class="mb-4 ">
-                            <a href="tel:+254-020-2243586" class="hover:underline">+254-020-2243586</a>
-                        </li>
-                        
-                    </ul>
-                </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Products</h2>
+                <ul class="text-gray-600">
+                    <li class="mb-4">
+                        <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('chemistry')"><i class="fa-solid fa-arrow-right pr-2"></i>Chemistry</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('immunology')"><i class="fa-solid fa-arrow-right pr-2"></i>Immunology</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('integratedImmunoChemistry')"><i class="fa-solid fa-arrow-right pr-2"></i>Intergrated Immuno Chemistry</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('hematology')"><i class="fa-solid fa-arrow-right pr-2"></i>Hematology</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('laboratoryAutomation')"><i class="fa-solid fa-arrow-right pr-2"></i>Laboratory automation</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('informatics')"><i class="fa-solid fa-arrow-right pr-2"></i>Informatics</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-links hover:underline"onclick="openCategoryPage('pointOfCare')"><i class="fa-solid fa-arrow-right pr-2"></i>Point of Care</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact Us</h2>
+                <ul class="text-gray-600 ">
+                    <li class="mb-4">
+                        <a href="https://goo.gl/maps/5NdJt6xVfyQx4mQR9" class="hover:underline">Location: Alpha Centre Mombasa Rd, Godown No 70(A)</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Email:sales@RHL.co.ke</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="tel:+254-020-2252053" class="hover:underline">Phone:+2540202252053</a>
+                    </li>
+                    <li class="mb-4 ">
+                        <a href="tel:+254-020-2243586" class="hover:underline">+254-020-2243586</a>
+                    </li>
+                    
+                </ul>
             </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center ">©  <span id="get-current-year"></span> <a href="index.html" class="hover:underline">Renaissance Health Limited</a>. All Rights Reserved. Designed by <a class="text-gray-900">Ian Okova</a>
-            </span>
-           
-        </div>
-    </footer>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center ">©  <span id="get-current-year"></span> <a href="index.html" class="hover:underline">Renaissance Health Limited</a>. All Rights Reserved. Designed by <a class="text-gray-900">Ian Okova</a>
+        </span>
+       
+    </div>
+</footer>
+
 
 </body>
 </html>

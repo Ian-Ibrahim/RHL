@@ -50,7 +50,7 @@
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('hematology')">Hematology</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('labAutomation')">Lab automation</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('laboratotyAutomation')">Lab automation</a>
                         </li>
                         <li>
                             <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('informatics')">Informatics</a>
@@ -76,7 +76,7 @@
         </div>
     </nav>
     <section id="home " class="relative">
-        <div class="home-hero overlay text-white h-[50vh] bg-[url('media/bg.jpg')] flex flex-wrap flex-col items-start justify-center bg-no-repeat bg-top bg-fixed bg-cover relative">
+        <div class="home-hero overlay text-white h-[50vh] bg-[url('media/products/practice-2.webp')] flex flex-wrap flex-col items-start justify-center bg-no-repeat bg-center bg-fixed bg-cover relative">
             <ol class="inline-flex items-center space-x-1 md:space-x-3 z-50  absolute mr-2 p-5  top-2/4">
                 <li class="inline-flex items-center ">
                   <a href="index.html" class="inline-flex items-center text-xl font-medium text-white hover:text-[#FC6C18] ">
@@ -86,7 +86,7 @@
                 <li>
                   <div class="flex items-center">
                     <svg aria-hidden="true" class="w-6 h-6 text-gray-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                    <a href="#" class="ml-1 text-xl font-medium text-[#085F9E] md:ml-2 ">Catalogue</a>
+                    <a href="#" class="ml-1 text-xl font-medium text-[#085F9E] md:ml-2 ">Point of Care Test (POCT) Menu</a>
                   </div>
                 </li>
                
@@ -94,9 +94,28 @@
         </div>
     </section>
     <section class="p-10">
-        <h1 class="text-4xl font-extrabold " id="categoryName">Our catalogue</h1>
+        <h1 class="text-4xl font-extrabold " id="categoryName">Lumira Dx™ Test strips</h1>
+        <p class="mt-5">Our COVID-19, CRP, D-Dimer, Flu, HbA1c, INR, NT-proBNP, and RSV tests are now available, utilizing a wide range of assay technologies including enzyme, immunoassay, molecular, and electrolyte assays, all performed on a single, user-friendly device. Our extensive pipeline of over 30 tests is initially focused on addressing some of the most frequently diagnosed or managed conditions with point-of-care testing, including Coagulation disorders, Infectious diseases, Cardiovascular issues, and Diabetes.</p>
+        
         <div class="flex flex-wrap -mx-3 min-h-screen flex justify-center items-center flex-wrap" id="product-container">
     
+        </div>
+        <div class="flex flex-wrap items-center">
+            <div>
+                <h1 class="header-column text-4xl font-bold text-[#085F9E] ">Test Features</h1>
+                <ul>
+                    <li>Uses small sample volumes and multiple convenient sample types, including nasal swab and capillary blood</li>
+                    <li>Potential for broad menu of tests on single instrument</li>
+                    <li>Delivers diagnostic results in minutes</li>
+                    <li>Results are compared to standard laboratory reference methods</li>
+                    <li>On board haematocrit determination integrated into some tests</li>
+                    <li>Room temperature storage</li>
+                    <li>Liquid quality controls are available</li>
+                </ul>
+            </div>
+            <div class=" lg:w-1/3 flex items-center p-3 ">
+                <img class=" relative -left-4" src="media/products/generic-strip-lineup-977x396.webp" alt="">
+            </div>
         </div>
         <!-- Loading indicator -->
         <div class="flex items-center justify-center" id="loading">
@@ -106,7 +125,7 @@
         <script>
             // Get the category from the query parameter
             const urlParams = new URLSearchParams(window.location.search);
-            const category = urlParams.get('category');
+            const category = "Lumira Dx™";
             
             // Load the products from the JSON file
             let allProducts = [];
@@ -145,15 +164,7 @@
         
                 `;
             }).join('');
-            var result = "";
-            for (var i = 0; i < category.length; i++) {
-                if (category[i].toUpperCase() === category[i] && i !== 0) {
-                    result += " ";
-                }
-                result += category[i];
-            }
-            
-            document.getElementById('categoryName').innerHTML=result;
+           
             // Add the generated product cards to the product container
             document.getElementById('product-container').innerHTML += productCards;
             loadedProducts = loadedProducts.concat(batchProducts);
@@ -167,7 +178,7 @@
             .then(response => response.json())
             .then(data => {
                 // Filter the products by category
-                allProducts = data.filter(product => product.category === category);
+                allProducts = data.filter(product => product.subCategory === category);
         
                 // Load the initial batch of products
                 loadProducts();
@@ -185,9 +196,9 @@
 
     </section>
     <footer class="p-4 bg-white sm:p-6 bg-[url('media/bg-3.jpg')] bg-top bg-fixed bg-cover relative ">
-        <div class="md:flex md:justify-between z-50">
+        <div class="md:flex md:justify-between relative z-50">
             <div class="mb-6 md:mb-0 z-50">
-                <a href="#" class="flex items-center flex-wrap">
+                <a href="index.html" class="flex items-center flex-wrap">
                     <img src="media/rhl-bg-removed-blue.png" class="h-16 mr-3" alt="RHL Logo" />
                     <p class="">Suppliers of Medical Laboratory & Other Healthcare Products</p>
                     <a href="documents/iso-9001-2015.pdf" target="_blank">
@@ -230,25 +241,25 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Products</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <a href="" class="footer-links hover:underline "><i class="fa-solid fa-arrow-right pr-2"></i>Chemistry</a>
+                            <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('chemistry')"><i class="fa-solid fa-arrow-right pr-2"></i>Chemistry</a>
                         </li>
                         <li class="mb-4">
-                            <a href="" class="footer-links hover:underline "><i class="fa-solid fa-arrow-right pr-2"></i>Immunology</a>
+                            <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('immunology')"><i class="fa-solid fa-arrow-right pr-2"></i>Immunology</a>
                         </li>
                         <li class="mb-4">
-                            <a href="" class="footer-links hover:underline "><i class="fa-solid fa-arrow-right pr-2"></i>Intergrated Immune Chemistry</a>
+                            <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('integratedImmunoChemistry')"><i class="fa-solid fa-arrow-right pr-2"></i>Intergrated Immuno Chemistry</a>
                         </li>
                         <li class="mb-4">
-                            <a href="" class="footer-links hover:underline "><i class="fa-solid fa-arrow-right pr-2"></i>Hematology</a>
+                            <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('hematology')"><i class="fa-solid fa-arrow-right pr-2"></i>Hematology</a>
                         </li>
                         <li class="mb-4">
-                            <a href="" class="footer-links hover:underline "><i class="fa-solid fa-arrow-right pr-2"></i>Laboratory automation</a>
+                            <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('laboratoryAutomation')"><i class="fa-solid fa-arrow-right pr-2"></i>Laboratory automation</a>
                         </li>
                         <li class="mb-4">
-                            <a href="" class="footer-links hover:underline "><i class="fa-solid fa-arrow-right pr-2"></i>Informatics</a>
+                            <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('informatics')"><i class="fa-solid fa-arrow-right pr-2"></i>Informatics</a>
                         </li>
                         <li>
-                            <a href="" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Point of Care</a>
+                            <a href="#" class="footer-links hover:underline"onclick="openCategoryPage('pointOfCare')"><i class="fa-solid fa-arrow-right pr-2"></i>Point of Care</a>
                         </li>
                     </ul>
                 </div>
@@ -279,6 +290,7 @@
            
         </div>
     </footer>
+
 
 </body>
 </html>

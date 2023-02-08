@@ -43,7 +43,7 @@
 {    
    "id":"5",
    "name": "ACCELERATOR a3600",    
-   "category": "labAutomation",    
+   "category": "laboratoryAutomation",    
    "image": "media/products/accelerator-a3600.png",  
    "manufacturer":"Abbott",
    "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/accelerator/a3600.html#:~:text=The%20ACCELERATOR%20a3600%20is%20a,today%20and%20in%20the%20future.",  
@@ -181,13 +181,135 @@
    "description": "Introducing our LumiraDx Platform, a high sensitivity point of care diagnostic system. Combining a small, portable Instrument; microfluidic Test Strip; simple, standardized workflow; and seamless, secure digital connectivity to the Cloud and hospital IT systems<br>Integrates several technologies and sample types into a single Instrument, allowing for a continued development of a broad test menu across conditions diagnosed and managed in community-based healthcare settings.Replaces multiple point of care systems with a single Platform, increasing efficiency through reduced training, equipment, maintenance and test supplies. Currently offering COVID-19, CRP, D-Dimer, Flu, HbA1c, INR, NT-proBNP and RSV test capabilities, with a pipeline of over 30 tests across a range of assay technologies including enzyme, immunoassay, molecular and electrolyte assays. All carried out on one, easy to use device.<br>LumiraDx’s next generation, point of care diagnostic Platform is designed to be affordable and accessible for healthcare providers globally and intends to strengthen community-based healthcare.<br>Leverages testing methodologies used in lab analyser systems, enabling healthcare providers to deliver lab-comparable performance and real-time results at the point of care." 
 },{    
    "id":"19",
-   "name": "Lumira Dx™",    
+   "name": "CRP Test",    
    "category": "pointOfCare",    
    "subCategory":"Lumira Dx™",
-   "image": "media/products/",  
-   "manufacturer":"",
-   "readMoreLink":"",  
-   "downloadLink":"",
-   "description":""
+   "image": "media/products/test-pack-2021_crp.webp",  
+   "secondaryImage":"media/products/crp_package.jpg",
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/crp-test",  
+   "downloadLink":"https://assets.lumiradx.com/m/594a57d41a6cf64b/original/CRP-Test-Strip-Product-Insert-EN-NL_Web.pdf",
+   "description":"The measurement of CRP provides information for the detection and evaluation of infection, tissue injury, inflammation disorders, and associated disease.<br><br>Sample types:Direct Fingerstick (or via Lithium Heparin transfer tube) venous (Lithium Heparin) or plasma (Lithium Heparin)<br>Sample size: 20 μL<br>Hematocrit determination for whole blood sample to ensure 15-55% range<br>Time to result: 4 minutes<br>Storage at room temperature"
+},{    
+   "id":"20",
+   "name": "D-Dimer Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-2021_ddimer-v2.webp", 
+   "secondaryImage":"media/products/ddimer-package.png",
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/d-dimer-test",  
+   "downloadLink":"https://assets.lumiradx.com/m/5f5829338974181e/original/D-Dimer-Test-Strip-Product-Insert-g-L-FEU-EN.pdf",
+   "description":"The LumiraDx D-Dimer Test improves efficiency in primary and secondary care settings by offering a rapid assessment of patients presenting with symptoms of deep vein thrombosis (DVT) and pulmonary embolism (PE).<br><br>Clinical Cut-off: 500 µg/L FEU, 0.500 mg/L FEU<br>Fast, accurate, quantitative results in just 6 minutes.<br>Direct fingerstick sampling.<br>Only 15µL sample volume required<br>Room temperature Test Strip storage.<br>Precision:  ≤11.1% CV ."
+},{    
+   "id":"21",
+   "name": "HbA1c Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-hba1c-v2.webp",  
+   "secondaryImage":"media/products/",
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/hba1c",  
+   "downloadLink":"https://assets.lumiradx.com/m/3b751e8965d6de03/original/HbA1c-Test-Strip-Product-Insert-EN_NL_FR_DE_IT_ES_WEB.PDF",
+   "description":"The measurement of HbA1c allows physicians and pharmacists to monitor patients with diabetes, or as an aid to screen and identify those at risk for developing diabetes.<br><br>Sample types: capillary fingerstick or venous whole blood (EDTA) via lysis device.<br>Sample size: 15μL.<br>Time to result: < 7 minutes.<br>Precision: <2% NGSP, <3% IFCC (single instrument).<br>Measuring range: 20 - 130 mmol/mol (4.0 – 14.0%).<br>No significant Hb variant interference from HbS, HbC, HbD or HbE*.<br>Storage at room temperature.<br>The LumiraDx HbA1c test is a smart, automated, highly portable solution designed to improve access and ease of use in community-based healthcare settings."
+},{    
+   "id":"22",
+   "name": "INR Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-2021_inr-v2.webp",  
+   "secondaryImage":"media/products/",
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/inr-test",  
+   "downloadLink":"https://assets.lumiradx.com/m/dc41b5e5b2f44f2b/original/INR-Test-Strip-Product-Insert_web.pdf",
+   "description":"The LumiraDx INR Test measures prothrombin time reported as International Normalized Ratio (INR) from a single, direct fingerstick blood sample – all in less than 90 seconds*. The Test is used for monitoring patients on oral anticoagulation therapy with Vitamin-K Antagonist (VKA) drugs. Used with the LumiraDx Instrument, the Test delivers rapid results at the point of care."
+},{    
+   "id":"23",
+   "name": "Nt-proBNP Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-nt-probnp.webp", 
+   "secondaryImage":"media/products/", 
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/nt-pro-bnp",  
+   "downloadLink":"https://assets.lumiradx.com/m/145c78c86ba00dac/original/NT-proBNP-Test-Strip-Product-Insert-EN-only_web.pdf",
+   "description":"An easy to use, fast microfluidic immunoassay designed to rapidly quantify NT-proBNP levels in whole blood and plasma, the LumiraDx NT-proBNP Test delivers reliable, quantitative results in only 12 minutes at the point of need."
+},{    
+   "id":"24",
+   "name": "SARS-CoV-2 Ab(Antibody) Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-2021_cov-2-ab-v2.webp",  
+   "secondaryImage":"media/products/ab-package.png",
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/antibody-test",  
+   "downloadLink":"https://assets.lumiradx.com/m/3cb65c93eac38632/original/SARS-CoV-2-Ab-Test-Strip-Product-Insert-CE_web.pdf",
+   "description":"The LumiraDx SARS-CoV-2 Ab Test is a microfluidic immunofluorescence assay for qualitative detection of total antibodies to SARS-CoV-2 in human whole blood (capillary fingerstick or venous), plasma or serum for indication of recent or prior infection. Used with the LumiraDx Platform the Test delivers rapid results at the point of care."
+},{    
+   "id":"25",
+   "name": "SARS-CoV Ag(Antigen) Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-2021_cov-2-ag-v2.webp", 
+   "secondaryImage":"media/products/ag-package.png", 
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/antigen-test",  
+   "downloadLink":"https://www.lumiradx.com/assets/pdfs/covid-19-antigen-test/sars-cov-2-antigen-product-insert/antigen-test-strip-product-insert-de-en.pdf?v=10",
+   "description":"The LumiraDx SARS-CoV-2 Ag Test is a microfluidic immunofluorescence assay for the direct and qualitative detection of nucleocapsid protein antigen in nasal and nasopharyngeal swab specimens from individuals suspected of COVID-19 or asymptomatic individuals. Used with the LumiraDx Platform the test delivers rapid results at the point of care."
+},{    
+   "id":"26",
+   "name": "SARS-CoV Ag Pool Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-2021_cov-2-ag-pool.webp",  
+   "secondaryImage":"media/products/cov-2-ag-pool-package",
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/ag-pool-test",  
+   "downloadLink":"https://assets.lumiradx.com/m/dbea8ce3e508b0f2/original/SARS-CoV-2-Ag-Pool-Test-Product-Insert-CE_EN-DE_web.pdf",
+   "description":"The LumiraDx SARS-CoV-2 Ag Pool Test is a rapid microfluidic immunofluorescence assay for the qualitative detection of the nucleocapsid protein antigen in nasal or nasopharyngeal swab specimens pooled from up to 5 individuals suspected of COVID-19 or up to 5 asymptomatic individuals. Used with the LumiraDx Platform the test offers a rapid, scalable and cost-effective screening solution for infectious individuals."
+},{    
+   "id":"27",
+   "name": "SARS-CoV Ag Ultra Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-ag-ultra.webp",  
+   "secondaryImage":"media/products/sars-cov-2_ag_ultra-package.png",
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/sars-cov-2-ag-ultra",  
+   "downloadLink":"https://assets.lumiradx.com/m/262aab14c8c574a5/original/SARS-CoV-2-Ag-Ultra-Product-Insert-EN_NO_FI_DA_SE_web.pdf",
+   "description":"With excellent performance and results in just 5 minutes, the LumiraDx SARS-CoV-2 Ag Ultra test enables you to accurately and confidently test more patients, optimize clinic workflows and help triage patients without delay."
+},{    
+   "id":"28",
+   "name": "SARS-CoV Ag Ultra Pool Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-ag-ultra-pool.webp",  
+   "secondaryImage":"media/products/sars-cov-2_ag_ultra_pool-package.png",
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/covid-ultra-pool",  
+   "downloadLink":"https://assets.lumiradx.com/m/7343d09a47306ae9/original/SARS-CoV-2-Ag-Ultra-Pool-Product-Insert_EN_FR_DE_IT_NL_ES_Web.pdf",
+   "description":"Verify quickly that COVID-19 isn't spreading in your population with a rapid microfluidic assay that provides actionable, lab-comparable and cost-efficient results for pooled patient samples in just 5 minutes."
+},{    
+   "id":"29",
+   "name": "SARS-CoV-2 & Flu A/B test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-2021_cov-2-flu.webp", 
+   "secondaryImage":"media/products/cov-2-flu-package.png", 
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/flu-covid-test",  
+   "downloadLink":"https://assets.lumiradx.com/m/5800513d22159410/original/SARS-CoV-2-Flu-A_B-Product-Insert-EN_FR_DE_IT_ES_NL_web.pdf",
+   "description":"Verify potential infection quickly with a rapid microfluidic assay that provides actionable and lab-comparable results in 12 mins for patients suspected of Flu and/or COVID-19, to help decision making and guide treatment"
+},{    
+   "id":"30",
+   "name": "SARS-CoV-2 & RSV Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-cov-2_rsv.webp", 
+   "secondaryImage":"media/products/cov-2_rsv-package.png", 
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/sars-cov-2-and-rsv",  
+   "downloadLink":"https://assets.lumiradx.com/m/5725ac996a309ebc/original/SARS-CoV-2-RSV-Test-Strip-Product-Insert-EN-only.pdf",
+   "description":"Verify potential infection and help guide infection control measures quickly with a rapid microfluidic assay that provides actionable results in 12 minutes, for patients suspected of RSV and/or COVID-19."
 }
 ]
