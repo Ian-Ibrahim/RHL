@@ -30,7 +30,7 @@
             
             <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
             <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">Home</a>
+                <a href="index.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Home</a>
             </li>
             <li>
                 <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Products <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
@@ -63,7 +63,7 @@
                 </div>
             </li>
             <li>
-                <a href="about.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">About</a>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page" >About</a>
             </li>
             <li>
                 <a href="contact.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact</a>
@@ -76,24 +76,25 @@
         </div>
     </nav>
     <section>
-        <div class="home-hero relative min-h-screen flex flex-wrap">
-            <div class="lg:w-2/4 flex flex-wrap items-center p-4">
-                <div class="relative -top-16">
-                    <h1 class="text-4xl font-extrabold mb-4" >Suppliers of Medical Laboratory & Other Healthcare Products. </h1>
-                <p class="text-2xl mb-4">
-                    <i class="block text-xl mt-4"> Innovative Technology for Better Healthcare</i>
-                    
-                </p>
+        <div class="download-links">
+            <section id="home " class="relative">
+                <div class="home-hero overlay text-white h-[50vh] bg-[url('media/bg.jpg')] flex flex-wrap flex-col items-start justify-center bg-no-repeat bg-top bg-fixed bg-cover relative">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3 z-50  absolute mr-2 p-5  top-2/4">
+                        <li class="inline-flex items-center ">
+                          <a href="index.html" class="inline-flex items-center text-xl font-medium text-white hover:text-[#FC6C18] ">
+                            Home
+                          </a>
+                        </li>
+                        <li>
+                          <div class="flex items-center">
+                            <svg aria-hidden="true" class="w-6 h-6 text-gray-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <a href="#" class="ml-1 text-xl font-medium text-[#085F9E] md:ml-2 ">About</a>
+                          </div>
+                        </li>
+                       
+                    </ol>  
                 </div>
-                
-            </div>
-            <div class="bg-[url('media/bg-5.jpg')] bg-center bg-cover min-h-screen w-full lg:w-2/4 p-2" ></div>
-            <!-- <div>
-                <div class="icon-hexagon w-[35rem] h-[30rem] bg-white m-2 flex justify-center items-center"><img class="w-max  bg-black  object-center object-cover" src="media/bg-5.jpg" alt=""></div>
-            </div> -->
-            <a href="#about" class="absolute left-[48%] bottom-20 h-12 w-4 p-1 py-2 border-2 rounded-lg border-black border-solid flex justify-center">
-                <div class="rounded-full h-2 w-2 bg-black absolute animate-bounce"></div>
-            </a>
+            </section>
         </div>
     </section>
     <section>
@@ -110,7 +111,7 @@
                     <h1 class="header-column text-base">About us</h1>
                     <h2 class="text-4xl basis-full mb-4">We are Renaissance Health Limited.</h2>
                     <p>Established in 2018, Renaissance Health Limited is a strong industry leader distinguished by her core corporate values that places people at the center of everything. We have continued to provide our clients with trusted and quality products and services over the years. Renaissance Health Limited has a unique distribution and marketing network of more than 25 medical sales representatives and medical engineer. The company is managed by highly experience directors with diverse backgrounds and skill set. </p>
-                    <a href="about.html" class="btn-primary rounded-full  mt-5 bg-[#085F9E] text-white p-3">More about us</a>
+                    <!-- <a href="about.html" class="btn-primary rounded-full  mt-5 bg-[#085F9E] text-white p-3">More about us</a> -->
                 </div>
             </div>
         </div>
@@ -146,6 +147,7 @@
             </div>
         </div>
     </section>
+    
     <section>
         <div class="services p-4 flex flex-wrap justify-center items-center">
             <h1 class="header-center text-4xl font-extrabold basis-full text-center">Our services</h1>
@@ -205,125 +207,6 @@
         </div>
     </section>
     <section>
-        <div class="catalogue flex flex-wrap items-center justify-between">
-            <h1 class="header-center text-4xl font-extrabold text-center basis-full">Our catalogue</h1>
-            <div class="catalogue-container flex lg:flex-row flex-col lg:min-h-[100vh] mt-4 ">
-                <div class="bg-[url('media/bg-2.jpg')]  bg-no-repeat  bg-center bg-cover lg:w-2/4 w-full p-4 min-h-[50vh] hidden lg:block"></div>
-                <div class="flex justify-center items-start flex-wrap  lg:w-3/4 py-5 ">
-                    <div onclick="openCategoryPage('immunology')" class="card max-w-sm w-[15rem] min-h- p-6 bg-white h-96 border border-gray-200 flex items-center flex-wrap justify-between text-center" onclick="openCategoryPage('immunology')">
-                        <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/immunology.png" alt="immunty icon" />
-                        </a>
-                        <div class="basis-full h-0"></div>
-                        <div class="p-5 text-center  w-full">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Immunology</h5>
-                            </a>
-                            <a href="#" class="inline-flex items-center text-[#1E1E24] hover:underline">
-                                View products
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            </a>
-    
-                        </div>
-                    </div>
-                    
-                    <div onclick="openCategoryPage('chemistry')" class="card cursor-pointer max-w-sm  w-[15rem] p-6 h-96 bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
-                        <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/chemistry.png" alt="chemistry icon" />
-                        </a>
-                        <div class="basis-full h-0"></div>
-                        <div class="p-5 text-center  w-full">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Chemistry</h5>
-                            </a>
-                            <a href="#" class="inline-flex items-center text-[#1E1E24] hover:underline">
-                                View products
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div onclick="openCategoryPage('integratedImmunoChemistry')" class="card cursor-pointer max-w-sm  w-[15rem] h-96 p-6  bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
-                        <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/integratedImmunoChemistry.png" alt="intergrated immunity icon" />
-                        </a>
-                        <div class="basis-full h-0"></div>
-                        <div class="p-5 text-center  w-full">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Intergrated immuno chemistry</h5>
-                            </a>
-                            <a href="#" class="inline-flex items-center text-[#1E1E24] hover:underline">
-                                View products
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div onclick="openCategoryPage('hematology')" class="card cursor-pointer max-w-sm w-[15rem] p-6 h-96 bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
-                        <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/hematology.png" alt="hematology icon" />
-                        </a>
-                        <div class="basis-full h-0"></div>
-                        <div class="p-5 text-center  w-full">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Hematology</h5>
-                            </a>
-                            <a href="#" class="inline-flex items-center text-[#1E1E24] hover:underline">
-                                View products
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div onclick="openCategoryPage('laboratoryAutomation')" class="card cursor-pointer max-w-sm w-[15rem] h-96 p-6 bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
-                        <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/laboratoryAutomation.png" alt="" />
-                        </a>
-                        <div class="basis-full h-0"></div>
-                        <div class="p-5 text-center  w-full">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Lab automation</h5>
-                            </a>
-                            <a href="#" class="inline-flex items-center text-[#1E1E24] hover:underline">
-                                View products
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div onclick="openCategoryPage('pointOfCare')" class="card cursor-pointer max-w-sm w-[15rem] p-6 h-96  bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
-                        <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/pointOfCare.png" alt="" />
-                        </a>
-                        <div class="basis-full h-0"></div>
-                        <div class="p-5 text-center  w-full">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Point of care</h5>
-                            </a>
-                            <a href="#" class="inline-flex items-center text-[#1E1E24] hover:underline">
-                                View products
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div onclick="openCategoryPage('informatics')" class="card max-w-sm w-[15rem] p-6 h-96  bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center cursor-pointer">
-                        <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/informatics.png" alt="" />
-                        </a>
-                        <div class="basis-full h-0"></div>
-                        <div class="p-5 text-center  w-full">
-                            <a href="">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Informatics</h5>
-                            </a>
-                            <a href="#" class="inline-flex items-center text-[#1E1E24] hover:underline">
-                                View products
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            </a>
-                        </div>
-                    </div>  
-                    <div class="w-[15rem]"></div>
-                    <div class="w-[15rem]"></div>  
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
         <div class="partners bg-[#085F9E] text-center text-white flex flex-wrap justify-center items-center">
             <h1 class="header-center text-4xl">Our partners</h1>
             <div class="partners-container flex flex-wrap justify-center p-5">
@@ -332,14 +215,29 @@
             </div>
         </div>
     </section>
-    <section id="contact">
-        <div class="contact relative bg-[url('media/bg-contact.jpg')] bg-no-repeat h-[55vh] bg-cover bg-center flex justify-center flex-wrap items-center text-white">
-            <div class="text-center w-6/12 z-50">
-                <h2 class="text-4xl font-extrabold">Have any questions?</h2>
-                <p class="my-5">Contact us for any questions or concerns regarding our products. Our dedicated support team is available to assist you Monday to Friday, 9 AM to 5 PM</p>
-                <a href="contact.html" class=" rounded-full bg-[#085F9E] p-3 text-gray-50 uppercase font-medium whitespace-nowrap">Connect with us</a>
-            </div>    
-
+    <section>
+        <div class="partners  text-center  flex flex-wrap justify-center items-center p-4">
+            <h1 class="header-center text-4xl font-extrabold basis-full text-center">Our Customers</h1>
+            <p class="basis-full flex items-center "><span>At the present, our ever-growing customer list
+                consists of leaders in healthcare, academic
+                institutions and research institutions in the
+                entire East African region, including public
+                sector, NGOs and the Private sector.</span></p>
+            <div class="partners-container flex flex-wrap justify-center p-5">
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" loading="lazy" src="media/customers/nairobi-hospital.svg" alt=""></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" loading="lazy" src="media/customers/kmlogo.jpg" alt=""></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" loading="lazy" src="media/customers/lancet-laboratories-kenya.png" alt=""></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" loading="lazy" src="media/customers/ampath.jpg" alt=""></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" loading="lazy" src="media/customers/chmpLogo.png" alt=""></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" loading="lazy" src="media/customers/hjfmri.svg" alt=""></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" loading="lazy" src="media/customers/kutrrh.jpg" alt=""></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" loading="lazy" src="media/customers/ion-kenya.png" alt=""></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" loading="lazy" src="media/customers/cdc.png" alt=""></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" loading="lazy" src="media/customers/icrc.png" alt=""></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" loading="lazy" src="media/customers/M.P.-SHAH-Logo-2022-v2.png" alt=""></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" loading="lazy" src="media/customers/knh.png" alt=""></div>
+                
+            </div>
         </div>
     </section>
     <footer class="p-4 bg-white sm:p-6 bg-[url('media/bg-3.jpg')] bg-top bg-fixed bg-cover relative ">
@@ -439,7 +337,8 @@
         </span>
        
     </div>
-
+       
+    </div>
 </body>
 </html>
 <script src="app.js"></script>

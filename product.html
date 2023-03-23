@@ -19,7 +19,7 @@
     <nav class="px-2 py-3 bg-white border-gray-200 ">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
         <a href="index.html" class="flex items-center ">
-            <img src="media/RHL_SUBMARK.svg" class="h-10 mr-3 sm:h-10" alt="Renaissance Health limited logo" />
+            <img src="media/rhl-bg-removed-blue.png" class="h-10 mr-3 sm:h-10" alt="Renaissance Health limited logo" />
 
         </a>
         <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-dropdown" aria-expanded="false">
@@ -30,10 +30,10 @@
             
             <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
             <li>
-                <a href="index.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 " >Home</a>
+                <a href="index.html"class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "  >Home</a>
             </li>
             <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto" aria-current="page">Products <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-mediumblock py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 ">Products <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
                 <!-- Dropdown menu -->
                 <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
                     <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownLargeButton">
@@ -86,111 +86,107 @@
                 <li>
                   <div class="flex items-center">
                     <svg aria-hidden="true" class="w-6 h-6 text-gray-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                    <a href="#" class="ml-1 text-xl font-medium text-[#085F9E] md:ml-2 ">product</a>
+                    <a href="#" class="ml-1 text-xl font-medium text-[#085F9E] md:ml-2 ">Product</a>
                   </div>
                 </li>
                
             </ol>  
         </div>
     </section>
-
-
 <!-- JavaScript to generate the product cards -->
-<script>
-    // Get the category from the query parameter
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('productId');
-    
-    function loadSelectedProduct(selectedProduct) {
-        const productName = document.getElementById('product-name');
-        productName.textContent = selectedProduct.name;
+    <script>
+        // Get the category from the query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('productId');
         
-        const productImage = document.getElementById('product-image');
-        productImage.src = selectedProduct.image;
-        productImage.alt=selectedProduct.name;
+        function loadSelectedProduct(selectedProduct) {
+            const productName = document.getElementById('product-name');
+            productName.textContent = selectedProduct.name;
+            
+            const productImage = document.getElementById('product-image');
+            productImage.src = selectedProduct.image;
+            productImage.alt=selectedProduct.name;
 
-        const productReadMore = document.getElementById('read-more');
-        productReadMore.href = selectedProduct.readMoreLink;
-        if(selectedProduct.downloadLink!=""){
-        const productDownloadBtnBtn = document.getElementById('download-brochure');
-        productDownloadBtnBtn.href = selectedProduct.downloadLink;
-        productDownloadBtnBtn.innerText="Download brochure";
-        }
-        
-
-        var category=selectedProduct.category;
-        var result = "";
-        for (var i = 0; i < category.length; i++) {
-            if (category[i].toUpperCase() === category[i] && i !== 0) {
-                result += " ";
+            const productReadMore = document.getElementById('read-more');
+            productReadMore.href = selectedProduct.readMoreLink;
+            if(selectedProduct.downloadLink!=""){
+            const productDownloadBtnBtn = document.getElementById('download-brochure');
+            productDownloadBtnBtn.href = selectedProduct.downloadLink;
+            productDownloadBtnBtn.innerText="Download brochure";
             }
-            result += category[i];
-        }
+            var category=selectedProduct.category;
+            var result = "";
+            for (var i = 0; i < category.length; i++) {
+                if (category[i].toUpperCase() === category[i] && i !== 0) {
+                    result += " ";
+                }
+                result += category[i];
+            }
 
-        const productCategory=document.getElementById('category-name');
-        productCategory.textContent=result;
-        
-        const productDescription = document.getElementById('product-description');
-        productDescription.innerHTML = selectedProduct.description;
+            const productCategory=document.getElementById('category-name');
+            productCategory.textContent=result;
+            
+            const productDescription = document.getElementById('product-description');
+            productDescription.innerHTML = selectedProduct.description;
 
-        if(selectedProduct.hasOwnProperty('subCategorySet')){
-            document.getElementById('subCategoryBtn').innerHTML=`Explore  test menu <svg aria-hidden='true' class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg> `;
+            if(selectedProduct.hasOwnProperty('subCategorySet')){
+                document.getElementById('subCategoryBtn').innerHTML=`Explore  test menu <svg aria-hidden='true' class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg> `;
+            }
+            if(selectedProduct.hasOwnProperty('secondaryImage')){
+                document.getElementById('secondary-image').src=selectedProduct.secondaryImage;
+            }
+            document.getElementById('loading').style.display = 'none';
         }
-        if(selectedProduct.hasOwnProperty('secondaryImage')){
-            document.getElementById('secondary-image').src=selectedProduct.secondaryImage;
-        }
-        document.getElementById('loading').style.display = 'none';
-    }
-    // Load the  product
-    fetch('products.json')
-        .then(response => response.json())
-        .then(data => {
-            // Filter all products by the product ID passed in the URL query parameter
-            const selectedProduct = data.find(product => product.id === productId);
-            // Load the selected product details
-            loadSelectedProduct(selectedProduct);
-            // Filter all products by category of the selected product
-            const otherProducts = data.filter(product => product.category === selectedProduct.category && product.id !== productId);
-            // Create a list of other products in the same category as the selected product
-            // const otherProductsList = document.getElementById('other-products-list');
-            let otherProductsList = document.getElementById('other-products-list');
-                let otherProductIndex = 0;
+        // Load the  product
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                // Filter all products by the product ID passed in the URL query parameter
+                const selectedProduct = data.find(product => product.id === productId);
+                // Load the selected product details
+                loadSelectedProduct(selectedProduct);
+                // Filter all products by category of the selected product
+                const otherProducts = data.filter(product => product.category === selectedProduct.category && product.id !== productId);
+                // Create a list of other products in the same category as the selected product
+                // const otherProductsList = document.getElementById('other-products-list');
+                let otherProductsList = document.getElementById('other-products-list');
+                    let otherProductIndex = 0;
 
-                function loadNext5Products() {
-                for (let i = 0; i < 5; i++) {
-                    if (otherProductIndex >= otherProducts.length) {
-                    break;
+                    function loadNext5Products() {
+                    for (let i = 0; i < 5; i++) {
+                        if (otherProductIndex >= otherProducts.length) {
+                        break;
+                        }
+                        document.getElementById("noProducts").style.display="none";
+                        const otherProduct = otherProducts[otherProductIndex];
+                        const otherProductItem = document.createElement('div');
+                        otherProductItem.innerHTML = `
+                        <div onclick="openProductPage('${otherProduct.id}')"class="m-3 product-container card w-[20rem] h-[28rem]  flex flex-wrap items-center relative">
+                            <div class="product-image-container w-full bg-black/[10%] flex items-center">
+                                <img class="h-64 object-center object-contain p-2 w-full" src="${otherProduct.image}" alt="${otherProduct.name}">
+                            </div>
+                            <div class="product-desc p-2 py-10 ">
+                                <h2>Abbott</h2>
+                                <h2 class="font-bold relative text-2xl">${otherProduct.name}</h2>
+                                
+                            </div>
+                            <div class="icon-hexagon absolute left-2 bottom-[7.5rem] w-24 h-24 p-4  bg-gray-100 m-2 flex justify-center items-center">
+                                <img classs="w-32 h-64 object-center object-contain" src="media/icons/${otherProduct.category}.png" alt="">
+                                
+                            </div>
+                        </div>
+
+                        `;
+                        otherProductsList.appendChild(otherProductItem);
+                        otherProductIndex++;
                     }
-                    document.getElementById("noProducts").style.display="none";
-                    const otherProduct = otherProducts[otherProductIndex];
-                    const otherProductItem = document.createElement('div');
-                    otherProductItem.innerHTML = `
-                    <div onclick="openProductPage('${otherProduct.id}')"class="m-3 product-container card w-[20rem] h-[28rem]  flex flex-wrap items-center relative">
-                        <div class="product-image-container w-full bg-black/[10%] flex items-center">
-                            <img class="h-64 object-center object-contain p-2 w-full" src="${otherProduct.image}" alt="${otherProduct.name}">
-                        </div>
-                        <div class="product-desc p-2 py-10 ">
-                            <h2>Abbott</h2>
-                            <h2 class="font-bold relative text-2xl">${otherProduct.name}</h2>
-                            
-                        </div>
-                        <div class="icon-hexagon absolute left-2 bottom-[7.5rem] w-24 h-24 p-4  bg-gray-100 m-2 flex justify-center items-center">
-                            <img classs="w-32 h-64 object-center object-contain" src="media/icons/${otherProduct.category}.png" alt="">
-                            
-                        </div>
-                    </div>
+                    }
 
-                    `;
-                    otherProductsList.appendChild(otherProductItem);
-                    otherProductIndex++;
-                }
-                }
+                    loadNext5Products();
 
-                loadNext5Products();
+            });
 
-        });
-
-</script>
+    </script>
 <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6 relative">
     <div class="flex items-center justify-center bg-white absolute top-0 bottom-0 left-0 right-0 p-5 " id="loading">
         <div class="spinner ">
@@ -213,9 +209,9 @@
         <p class="mb-4" id="product-description">
             ${product.description}
         </p>
-        <a href="#" id="read-more" target="_blank" class="btn-primary rounded-full  mt-5 bg-[#085F9E] text-white p-3">Read more   </a>
+        <a href="#" id="read-more" target="_blank" class="btn-primary rounded-full  mt-5 bg-[#085F9E] text-white p-3">Read more</a>
         <br>
-        <a href="#" target="_blank" id="download-brochure"class=" inline-flex items-center px-2 py-2  mt-2 hover:underline">    </a>
+        <a href="#" target="_blank" id="download-brochure"class=" inline-flex items-center px-2 py-2  mt-2 underline">    </a>
         <br>
         <a href="subCategory.html"  id="subCategoryBtn"class=" inline-flex items-center px-2 py-2  mt-2 hover:underline" > </a>
     </div>
@@ -236,7 +232,7 @@
                 <img src="media/rhl-bg-removed-blue.png" class="h-16 mr-3" alt="RHL Logo" />
                 <p class="">Suppliers of Medical Laboratory & Other Healthcare Products</p>
                 <a href="documents/iso-9001-2015.pdf" target="_blank">
-                    <img src="media/certification.png " class="w-72 p-5 invert" alt="ISO certification logo">
+                    <img src="media/ISO-logo-removebg-preview.png" class="w-72 p-5 " alt="ISO certification logo">
                 </a>
             </a>
         </div>
@@ -318,13 +314,14 @@
         </div>
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
-    <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center ">©  <span id="get-current-year"></span> <a href="index.html" class="hover:underline">Renaissance Health Limited</a>. All Rights Reserved. Designed by <a class="text-gray-900">Ian Okova</a>
-        </span>
-       
-    </div>
+    
 </footer>
-
+<div class="text-center bg-blue-700 text-white">
+    <span class="text-sm sm:text-center ">©  <span id="get-current-year"></span> <a href="index.html" class="hover:underline">Renaissance Health Limited</a>. All Rights Reserved. Designed by <a class="text-gray-900 mr-2 text-base underline" href="https://ianokova.netlify.app/">Ian Okova</a>
+    <div class="basis-full text-sm"> Icons designed by <a class="underline" href="https://www.flaticon.com/authors/freepik">Freepik</a></div>   
+    </span>
+   
+</div>
 
 </body>
 </html>
