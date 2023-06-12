@@ -20,7 +20,7 @@ footer::after{
     left:0;
     right:0;
     bottom: 0;
-    background-color: rgba(247, 246, 229,0.8);
+    background-color: rgba(249, 249, 249, 0.8);
 }
 .home-hero.overlay::after{
     background-color: rgba(247, 246, 229,0.2);
