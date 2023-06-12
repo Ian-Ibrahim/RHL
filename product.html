@@ -97,7 +97,9 @@
         // Get the category from the query parameter
         const urlParams = new URLSearchParams(window.location.search);
         const productId = urlParams.get('productId');
-        
+        if (productId==""||productId===null||productId===undefined||productId===" "){
+            window.location.replace('catalogue.html');
+        }
         function loadSelectedProduct(selectedProduct) {
             const productName = document.getElementById('product-name');
             productName.textContent = selectedProduct.name;
