@@ -37,3 +37,38 @@ footer::after{
     transition-duration: .5s;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.search-modal-appeared #showModalBtn{
+    display:none;
+}
+.search-modal-appeared #navSearchBtn{
+    display:block;
+}
+.search-modal-appeared input{
+    animation: input-appears  750ms ease-in-out  1 ;
+    width: 100%;
+    display: block;
+    transition-duration: 1s;
+}
+.search-modal-disappeared input{
+    animation: input-disappears  750ms ease-in-out  1 ;
+}
+
+@keyframes input-appears {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes input-disappears {
+    0%{
+        display: block;
+        width: 100%;
+    }
+    100%{
+        display: block;
+        width: 0%;
+    }
+}

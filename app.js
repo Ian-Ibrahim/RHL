@@ -8,16 +8,31 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 // end  of tawk to
+const searchForm=document.getElementById('navSearchModal');
+
+const showModalBtn=document.getElementById('showModalBtn');
+const navSearchBtn=document.getElementById('navSearchBtn');
+let queryTerm=document.getElementById('query');
 function showSearchModal(){
-  searchModal.style.bottom='-9rem';
-  searchModal.classList.add('searh-modal-appeared');
+  searchForm.classList.add('search-modal-appeared');
+  searchForm.classList.remove('search-modal-disappeared');
+  queryTerm.focus();
 }
 function closeSearchModal(){
-  searchModal.style.bottom='14rem';
+  searchForm.classList.remove('search-modal-appeared');
+  searchForm.classList.add('search-modal-disappeared');
+}
+function blurSearchInput(){
+  if(queryTerm.value===null || queryTerm.value==="" || queryTerm===" "){
+    closeSearchModal()
+  }
+  else{
+    setTimeout(closeSearchModal, 500);
+  }
 }
 function navSearch(){
-  let queryTerm=document.getElementById('query').value
-  window.location.href=`search.html?keyword=${queryTerm}`;
+
+  window.location.href=`search.html?keyword=${queryTerm.value}`;
   return false;
 }
 function searchSubmit(){

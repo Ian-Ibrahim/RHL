@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://kit.fontawesome.com/c5d17fdd58.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Renaissance Health Limited</title>
+</head>
+<body class="max-w-screen overflow-x-hidden">
+    <div  id="searchModal">
+        <!-- <svg  fill="none" stroke="currentColor" viewBox="0 0 24 24" onclick="closeSearchModal()" class="w-8 h-8"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"></path>
+        </svg> -->
+        
+    </div>
+    <nav class="px-2 py-3 bg-gray-200 border-gray-200 rounded-b-3xl">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="index.html" class="flex items-center justify-center lg:h-20">
+                <img src="media/RHL_SUBMARK.svg" class="mr-3 h-16" alt="Renaissance Health limited logo" />
+            </a>
+            
+            <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-base text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                
+                <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium md:border-0  ">
+                    <li>
+                        <a href="index.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Products <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar" class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                            <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownLargeButton">
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('chemistry')">Chemistry</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('immunology')">Immunology</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('integratedImmunoChemistry')">Intergrated Immuno Chemistry</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('hematology')">Hematology</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('laboratoryAutomation')">Lab automation</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('informatics')">Informatics</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('pointOfCare')">Point of care</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <a href="about.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact</a>
+                    </li>
+                    <li>
+                        <a href="downloads.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Downloads</a>
+                    </li>
+                </ul>
+            </div>
+            <form action="" class="z-30 basis-full lg:w-7/12 md:w-9/12 py-4 my-4 bg-gray-300  rounded-3xl " onsubmit="return searchSubmit()">
+                <div class="p-4 font-extrabold  z-50 w-full" id="pre-search">
+                    <span>Search for product by id, name or manuacturer </span>
+                </div>
+                <div class="w-full flex p-4 bg-transparent">
+                    <input type="text" required name="query" id="query" placeholder="Search by category, id, manufacturer..." class="w-full bg-transparent border-none  border-black " style="border-bottom: 2px solid black;">
+                    <button  class="w-12 h-12   inline-flex items-center justify-center border-none  border-black" id="search-button"
+                    style="border-bottom: 2px solid black;">
+                        <svg class="w-5 h-5 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                    
+              </form>
+        </div>
+    </nav>
+    
+    
+    <section id="search-page-text">
+        <div class=" grid grid-cols-12 gap-4 px-4 min-h-[45vh]">
+            <div class="col-span-12 md:col-span-6 lg:col-span-6 py-3 md:border-r lg:border-r  flex flex-wrap justify-center m-2">
+                <div class="flex place-items-end ">
+                    <img src="media/icons/chemistry.png" alt="laboratory equipment with chemicals icon" class="w-32 h-32 my-4"> 
+                </div>
+                
+                <p class="basis-full text-center my-4"> 
+                    Explore the extensive range of products we offer and see how Ultralab can empower you to achieve your healthcare and laboratory goals.
+                    <br>
+                    <br>
+                    <a href="catalogue.html" class="btn-primary rounded-full text-xl bg-[#085F9E] text-white p-2 my-16">Browse products</a>
+                </p>
+                
+            </div>
+            <div class="col-span-12 md:col-span-6 lg:col-span-6 py-3 flex flex-wrap justify-center m-2">
+                <div class="flex place-items-end ">
+                    <img src="media/icons/technical-support.png" alt="Technical support icon" class="w-32 h-32 my-4"> 
+                </div>
+                
+                <p class="basis-full text-center my-4">
+                    Do not hesitate to reach out to us; your inquiries matter, and we're here to provide prompt assistance and address any your concerns.
+                    <br>
+                    <br>
+                    <a href="mailto:sales@RHL.co.ke" class="btn-primary rounded-full text-xl bg-[#085F9E] text-white p-2 my-16">Speak to us</a>
+                </p>
+                
+            </div>
+        </div>
+    </section>
+    <section class="p-10 hidden" id="results-container">
+        <h1 class="text-4xl font-extrabold text-left"  id="queryTerm">Search for something</h1>
+        <div class=" my-3 hidden" id="loading">
+            <div class="flex flex-col items-center">
+                <div style="border-top-color:transparent" class="w-8 h-8 border-4 border-blue-200 rounded-full animate-spin"></div>
+                <p class="ml-2 text-xl">Browsing our catalogue.</p>
+            </div>
+            
+        </div>
+        <div  class="flex flex-wrap -mx-3 min-h-screen flex  flex-wrap" id="products-container">
+            
+        </div>
+    </section>  
+    <footer class="p-4 bg-white sm:p-6 bg-[url('media/bg-3.jpg')] bg-top bg-fixed bg-cover relative ">
+        <div class="md:flex md:justify-between relative z-50">
+            <div class="mb-6 md:mb-0 z-50">
+                <a href="index.html" class="flex items-center flex-wrap">
+                    <img src="media/RHL_submark.png" class="h-16 mr-3" alt="RHL Logo" />
+                    <p class="">Suppliers of Medical Laboratory & Other Healthcare Products</p>
+                    <a href="documents/iso-9001-2015.pdf" target="_blank">
+                        <img src="media/certification.png" class="w-72 p-5 " alt="ISO certification logo">
+                    </a>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 z-50">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Quick links</h2>
+                    <ul class="text-gray-600">
+                        <li class="mb-4">
+                            <a href="about.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>About</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="catalogue.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Catalogue</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="contact.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Contact</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="downloads.html" class="footer-links hover:underline"><i class="fa-solid fa-arrow-right pr-2"></i>Downloads</a>
+                        </li>
+                    </ul>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Opening hours</h2>
+                    <ul class="text-gray-600">
+                        <li class="mb-4">
+                            <a >Mon-Fri 08:30am-04:30pm</a>
+                        </li>
+                        <li class="mb-4">
+                            <a  >Sat & Sun Closed</a>
+                        </li>
+                        <li class="mb-4">
+                            <a  >Public Holiday Closed</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Products</h2>
+                    <ul class="text-gray-600">
+                        <li class="mb-4">
+                            <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('chemistry')"><i class="fa-solid fa-arrow-right pr-2"></i>Chemistry</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('immunology')"><i class="fa-solid fa-arrow-right pr-2"></i>Immunology</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('integratedImmunoChemistry')"><i class="fa-solid fa-arrow-right pr-2"></i>Intergrated Immuno Chemistry</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('hematology')"><i class="fa-solid fa-arrow-right pr-2"></i>Hematology</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('laboratoryAutomation')"><i class="fa-solid fa-arrow-right pr-2"></i>Laboratory automation</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('informatics')"><i class="fa-solid fa-arrow-right pr-2"></i>Informatics</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-links hover:underline"onclick="openCategoryPage('pointOfCare')"><i class="fa-solid fa-arrow-right pr-2"></i>Point of Care</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact Us</h2>
+                    <ul class="text-gray-600 ">
+                        <li class="mb-4">
+                            <a href="https://goo.gl/maps/5NdJt6xVfyQx4mQR9" class="hover:underline">Location: Alpha Centre Mombasa Rd, Godown No 70(A)</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Email:sales@RHL.co.ke</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="tel:+254-020-2252053" class="hover:underline">Phone:+2540202252053</a>
+                        </li>
+                        <li class="mb-4 ">
+                            <a href="tel:+254-020-2243586" class="hover:underline">+254-020-2243586</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
+        
+    </footer>
+    <div class="text-center bg-[#085F9E] text-white">
+        <span class="text-sm sm:text-center ">©  <span id="get-current-year"></span> <a href="index.html" class="hover:underline">Renaissance Health Limited</a>. All Rights Reserved. Designed by <a class=" mr-2 text-base underline" href="https://ianokova.netlify.app/">Ian Okova</a>
+        <div class="basis-full text-sm"> Icons designed by <a class="underline" href="https://www.flaticon.com/authors/freepik">Freepik</a></div>   
+        </span>
+       
+    </div>
+
+</body>
+</html>
+
+<script src="app.js"></script>
