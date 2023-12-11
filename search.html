@@ -101,8 +101,6 @@
               </form>
         </div>
     </nav>
-    
-    
     <section id="search-page-text">
         <div class=" grid grid-cols-12 gap-4 px-4 min-h-[45vh]">
             <div class="col-span-12 md:col-span-6 lg:col-span-6 py-3 md:border-r lg:border-r  flex flex-wrap justify-center m-2">
@@ -150,11 +148,9 @@
         <div class="md:flex md:justify-between relative z-50">
             <div class="mb-6 md:mb-0 z-50">
                 <a href="index.html" class="flex items-center flex-wrap">
-                    <img src="media/RHL_submark.png" class="h-16 mr-3" alt="RHL Logo" />
+                    <img src="media/rhl-bg-removed-blue.png" class="h-16 mr-3" alt="RHL Logo" />
                     <p class="">Suppliers of Medical Laboratory & Other Healthcare Products</p>
-                    <a href="documents/iso-9001-2015.pdf" target="_blank">
-                        <img src="media/certification.png" class="w-72 p-5 " alt="ISO certification logo">
-                    </a>
+                    
                 </a>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 z-50">
@@ -218,16 +214,16 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact Us</h2>
                     <ul class="text-gray-600 ">
                         <li class="mb-4">
-                            <a href="https://goo.gl/maps/5NdJt6xVfyQx4mQR9" class="hover:underline">Location: Alpha Centre Mombasa Rd, Godown No 70(A)</a>
+                            <a href="https://goo.gl/maps/5NdJt6xVfyQx4mQR9" class="hover:underline">Location: Alpha Centre Mombasa Rd, Godown No 67</a>
                         </li>
                         <li class="mb-4">
                             <a href="#" class="hover:underline">Email:sales@RHL.co.ke</a>
                         </li>
                         <li class="mb-4">
-                            <a href="tel:+254-020-2252053" class="hover:underline">Phone:+2540202252053</a>
+                            <a href="tel:+2540202400243" class="hover:underline">Phone:+254-020-2400243</a>
                         </li>
                         <li class="mb-4 ">
-                            <a href="tel:+254-020-2243586" class="hover:underline">+254-020-2243586</a>
+                            <a href="tel:+254705984252" class="hover:underline">Mobile:+254-705984252</a>
                         </li>
                         
                     </ul>
@@ -248,3 +244,238 @@
 </html>
 
 <script src="app.js"></script>
+<script>
+    // Assuming you have the products.json structure
+    const urlParams = new URLSearchParams(window.location.search);
+    const keyword = urlParams.get('keyword');
+    // Define a global variable to store the loaded products
+    let products = [];
+    let loadedProducts = [];
+
+    // Fetch and parse JSON data
+    fetch('products.json')
+    .then(response => response.json())
+    .then(data => {
+    products = data; // Store the parsed data
+    })
+    .catch(error => console.error('Error loading JSON:', error));
+
+    // Search form elements
+    const searchForm = document.getElementById('search-form');
+    const queryInput = document.getElementById('query');
+    
+    const searchButton = document.getElementById('search-button'); 
+    const queryTerm=document.getElementById('queryTerm');
+    const preSearchText=document.getElementById('pre-search');
+    const resultsArea=document.getElementById('results-container');
+    const searchPageText=document.getElementById('search-page-text');
+    // Result container
+    const resultsContainer = document.getElementById('products-container');
+
+    
+    // Event listener for search button click
+    searchButton.addEventListener('click', function () {
+    const searchTerm = queryInput.value.toLowerCase();
+    
+    // Filter products based on the search term
+        const filteredProducts = products.filter(product => {
+        // You can customize the search logic based on your needs
+            return (
+            product.id.toLowerCase().includes(searchTerm) ||
+            product.name.toLowerCase().includes(searchTerm) ||
+            product.manufacturer.toLowerCase().includes(searchTerm) ||
+            product.description.toLowerCase().includes(searchTerm) ||
+            product.category.toLowerCase().includes(searchTerm) 
+
+            );
+        }
+    );
+    // Get the current URL
+    var currentUrl = window.location.href;
+
+    // Define the new value for the 'keyword' parameter
+    var newKeywordValue = "nuj";
+
+    // Replace the 'keyword' parameter with the new value
+    var updatedUrl = currentUrl.replace(/(\?|&)keyword=[^&]*/, "$1keyword=" + searchTerm);
+
+    // Change the URL without reloading the page
+    history.pushState(null, null, updatedUrl);
+
+    // Clear existing results before displaying new ones
+    resultsContainer.innerHTML = '';
+    loadedProducts = [];
+    const loadProducts = () => {
+                // Show the loading indicator
+        document.getElementById('loading').style.display = 'flex';
+        // setTimeout(function() {
+        //     window.location.href = "https://your-new-page-url.com";
+        // }, 2500);
+        // window.location.href = "https://your-new-page-url.com";
+        // Load a batch of products from the JSON file
+        const batchSize = 10;
+        const startIndex = loadedProducts.length;
+
+        const endIndex = startIndex + batchSize;
+        const batchProducts = filteredProducts.slice(startIndex, Math.min(endIndex, filteredProducts.length));
+        // Generate the product cards for the batch of products
+        const productCards = batchProducts.map(product => {
+            if(product.image==""||product.image==null||product.image==" "){
+                    product.image='media/ultralablogo.png'   
+                }
+            return `
+            <div onclick="openProductPage('${product.id}')"class="m-3 product-container card w-[20rem] h-[28rem]  flex flex-wrap items-center relative">
+                <div class="product-image-container w-full  flex items-center">
+                    <img class="h-64 object-center object-contain p-2 w-full" src="${product.image}" alt="${product.name}">
+                </div>
+                <div class="product-desc p-2 py-10 ">
+                    <h2>${product.manufacturer}</h2>
+                    <h2 class="font-bold relative text-2xl">${product.name}</h2>
+                    
+                </div>
+
+            </div>
+            `;
+        }).join('');
+
+
+        // Add the generated product cards to the product container
+        resultsContainer.innerHTML += productCards;
+        loadedProducts = loadedProducts.concat(batchProducts);
+
+        // Hide the loading indicator
+        document.getElementById('loading').style.display = 'none';
+        };
+            
+    resultsArea.style.display="block";
+    searchPageText.style.display="none";
+    if(filteredProducts.length<=0){
+        // no items found
+        queryTerm.innerHTML='Search results for " '+searchTerm+' "';
+        preSearchText.innerHTML="No items found in database.";
+        resultsContainer.style.display='block';
+        resultsContainer.innerHTML=`
+        <div class="m-3 ">
+            No items found in the database
+        </div>
+        
+        `;
+    }
+    else if(filteredProducts.length>=1){
+        //items found
+        resultsContainer.style.display='flex';
+        loadProducts();
+        queryTerm.innerHTML='Search results for " '+searchTerm+' "';
+        preSearchText.innerHTML=filteredProducts.length+" items found in database.";
+    }
+
+    window.onscroll=()=>{
+    const bottomOfPage = resultsContainer.scrollHeight - window.innerHeight <= window.scrollY + 1;
+    if (bottomOfPage && loadedProducts.length < filteredProducts.length) {
+        // Load the next batch of products if the page has scrolled to the bottom
+        loadProducts();
+    }
+    }
+    });
+
+
+    if(keyword!==null){
+        
+        queryInput.value=keyword;
+        searchTerm=queryInput.value
+        let loadedProducts = [];
+        let products = [];  
+        fetch('products.json')
+        .then(response => response.json())
+        .then(data => {
+
+            products = data; // Store the parsed data
+        
+        
+        
+        const filteredProducts = products.filter(product => {
+            
+            // You can customize the search logic based on your needs
+                return (
+                product.id.toLowerCase().includes(searchTerm) ||
+                product.name.toLowerCase().includes(searchTerm) ||
+                product.manufacturer.toLowerCase().includes(searchTerm) ||
+                product.description.toLowerCase().includes(searchTerm) ||
+                product.category.toLowerCase().includes(searchTerm) 
+
+                );
+        });
+
+        
+        const initialLoadProducts = () => {
+                    // Show the loading indicator
+            document.getElementById('loading').style.display = 'flex';
+
+            // Load a batch of products from the JSON file
+            const batchSize = 10;
+            const startIndex = loadedProducts.length;
+
+            const endIndex = startIndex + batchSize;
+            const batchProducts = filteredProducts.slice(startIndex, Math.min(endIndex, filteredProducts.length));
+            // Generate the product cards for the batch of products
+            const productCards = batchProducts.map(product => {
+                return `
+                <div onclick="openProductPage('${product.id}')"class="m-3 product-container card w-[20rem] h-[28rem]  flex flex-wrap items-center relative">
+                    <div class="product-image-container w-full  flex items-center">
+                        <img class="h-64 object-center object-contain p-2 w-full" src="${product.image}" alt="${product.name}">
+                    </div>
+                    <div class="product-desc p-2 py-10 ">
+                        <h2>${product.manufacturer}</h2>
+                        <h2 class="font-bold relative text-2xl">${product.name}</h2>
+                        
+                    </div>
+
+                </div>
+                `;
+            }).join('');
+
+
+            // Add the generated product cards to the product container
+            resultsContainer.innerHTML += productCards;
+            loadedProducts = loadedProducts.concat(batchProducts);
+
+            // Hide the loading indicator
+            document.getElementById('loading').style.display = 'none';
+        };
+        if(filteredProducts.length<=0){
+            // no items found
+            queryTerm.innerHTML='Search results for " '+searchTerm+' "';
+            preSearchText.innerHTML="No items found in database.";
+            resultsContainer.style.display='block';
+            resultsContainer.innerHTML=`
+            <div class="m-3 ">
+                No items found in the database
+            </div>
+            
+            `;
+        }
+        else if(filteredProducts.length>=1){
+            //items found
+            resultsContainer.style.display='flex';
+            initialLoadProducts();
+            queryTerm.innerHTML='Search results for " '+searchTerm+' "';
+            preSearchText.innerHTML=filteredProducts.length+" items found in database.";
+        }
+        
+        
+        document.getElementById('loading').style.display = 'none';
+        resultsArea.style.display="block";
+        searchPageText.style.display="none";
+        window.onscroll=()=>{
+        const bottomOfPage = resultsContainer.scrollHeight - window.innerHeight <= window.scrollY + 1;
+        if (bottomOfPage && loadedProducts.length < filteredProducts.length) {
+            // Load the next batch of products if the page has scrolled to the bottom
+            initialLoadProducts();
+        }
+        }
+    })
+        .catch(error => console.error('Error loading JSON:', error));
+    }
+
+
+</script>

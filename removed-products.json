@@ -1,0 +1,66 @@
+{    
+   "id":"18",
+   "name": "Lumira Dx™",    
+   "category": "pointOfCare",    
+   "image": "media/products/lumira.jpeg",  
+   "manufacturer":"lumira",
+   "subCategorySet":"1",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/instrument",  
+   "downloadLink":"https://www.lumiradx.com/assets/pdfs/lumiradx-platform/lumiradx-platform-specifications-english.pdf",
+   "description": "Introducing our LumiraDx Platform, a high sensitivity point of care diagnostic system. Combining a small, portable Instrument; microfluidic Test Strip; simple, standardized workflow; and seamless, secure digital connectivity to the Cloud and hospital IT systems<br>Integrates several technologies and sample types into a single Instrument, allowing for a continued development of a broad test menu across conditions diagnosed and managed in community-based healthcare settings.Replaces multiple point of care systems with a single Platform, increasing efficiency through reduced training, equipment, maintenance and test supplies. Currently offering COVID-19, CRP, D-Dimer, Flu, HbA1c, INR, NT-proBNP and RSV test capabilities, with a pipeline of over 30 tests across a range of assay technologies including enzyme, immunoassay, molecular and electrolyte assays. All carried out on one, easy to use device.<br>LumiraDx’s next generation, point of care diagnostic Platform is designed to be affordable and accessible for healthcare providers globally and intends to strengthen community-based healthcare.<br>Leverages testing methodologies used in lab analyser systems, enabling healthcare providers to deliver lab-comparable performance and real-time results at the point of care." 
+},{    
+   "id":"19",
+   "name": "CRP Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-2021_crp.webp",  
+   "secondaryImage":"media/products/crp_package.jpg",
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/crp-test",  
+   "downloadLink":"https://assets.lumiradx.com/m/594a57d41a6cf64b/original/CRP-Test-Strip-Product-Insert-EN-NL_Web.pdf",
+   "description":"The measurement of CRP provides information for the detection and evaluation of infection, tissue injury, inflammation disorders, and associated disease.<br><br>Sample types:Direct Fingerstick (or via Lithium Heparin transfer tube) venous (Lithium Heparin) or plasma (Lithium Heparin)<br>Sample size: 20 μL<br>Hematocrit determination for whole blood sample to ensure 15-55% range<br>Time to result: 4 minutes<br>Storage at room temperature"
+},{    
+   "id":"20",
+   "name": "D-Dimer Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-2021_ddimer-v2.webp", 
+   "secondaryImage":"media/products/ddimer-package.png",
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/d-dimer-test",  
+   "downloadLink":"https://assets.lumiradx.com/m/5f5829338974181e/original/D-Dimer-Test-Strip-Product-Insert-g-L-FEU-EN.pdf",
+   "description":"The LumiraDx D-Dimer Test improves efficiency in primary and secondary care settings by offering a rapid assessment of patients presenting with symptoms of deep vein thrombosis (DVT) and pulmonary embolism (PE).<br><br>Clinical Cut-off: 500 µg/L FEU, 0.500 mg/L FEU<br>Fast, accurate, quantitative results in just 6 minutes.<br>Direct fingerstick sampling.<br>Only 15µL sample volume required<br>Room temperature Test Strip storage.<br>Precision:  ≤11.1% CV ."
+},{    
+   "id":"21",
+   "name": "HbA1c Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-hba1c-v2.webp",  
+   "secondaryImage":"media/products/",
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/hba1c",  
+   "downloadLink":"https://assets.lumiradx.com/m/3b751e8965d6de03/original/HbA1c-Test-Strip-Product-Insert-EN_NL_FR_DE_IT_ES_WEB.PDF",
+   "description":"The measurement of HbA1c allows physicians and pharmacists to monitor patients with diabetes, or as an aid to screen and identify those at risk for developing diabetes.<br><br>Sample types: capillary fingerstick or venous whole blood (EDTA) via lysis device.<br>Sample size: 15μL.<br>Time to result: < 7 minutes.<br>Precision: <2% NGSP, <3% IFCC (single instrument).<br>Measuring range: 20 - 130 mmol/mol (4.0 – 14.0%).<br>No significant Hb variant interference from HbS, HbC, HbD or HbE*.<br>Storage at room temperature.<br>The LumiraDx HbA1c test is a smart, automated, highly portable solution designed to improve access and ease of use in community-based healthcare settings."
+},{    
+   "id":"22",
+   "name": "INR Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-2021_inr-v2.webp",  
+   "secondaryImage":"media/products/",
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/inr-test",  
+   "downloadLink":"https://assets.lumiradx.com/m/dc41b5e5b2f44f2b/original/INR-Test-Strip-Product-Insert_web.pdf",
+   "description":"The LumiraDx INR Test measures prothrombin time reported as International Normalized Ratio (INR) from a single, direct fingerstick blood sample – all in less than 90 seconds*. The Test is used for monitoring patients on oral anticoagulation therapy with Vitamin-K Antagonist (VKA) drugs. Used with the LumiraDx Instrument, the Test delivers rapid results at the point of care."
+},{    
+   "id":"23",
+   "name": "Nt-proBNP Test",    
+   "category": "pointOfCare",    
+   "subCategory":"Lumira Dx™",
+   "image": "media/products/test-pack-nt-probnp.webp", 
+   "secondaryImage":"media/products/", 
+   "manufacturer":"lumira",
+   "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/nt-pro-bnp",  
+   "downloadLink":"https://assets.lumiradx.com/m/145c78c86ba00dac/original/NT-proBNP-Test-Strip-Product-Insert-EN-only_web.pdf",
+   "description":"An easy to use, fast microfluidic immunoassay designed to rapidly quantify NT-proBNP levels in whole blood and plasma, the LumiraDx NT-proBNP Test delivers reliable, quantitative results in only 12 minutes at the point of need."
+},
