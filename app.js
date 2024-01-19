@@ -8,22 +8,22 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 // end  of tawk to
-const searchForm=document.getElementById('navSearchModal');
+const navSearchForm=document.getElementById('navSearchModal');
 
 const showModalBtn=document.getElementById('showModalBtn');
 const navSearchBtn=document.getElementById('navSearchBtn');
-let queryTerm=document.getElementById('query');
+let navQueryTerm=document.getElementById('query');
 function showSearchModal(){
-  searchForm.classList.add('search-modal-appeared');
-  searchForm.classList.remove('search-modal-disappeared');
-  queryTerm.focus();
+  navSearchForm.classList.add('search-modal-appeared');
+  navSearchForm.classList.remove('search-modal-disappeared');
+  navQueryTerm.focus();
 }
 function closeSearchModal(){
-  searchForm.classList.remove('search-modal-appeared');
-  searchForm.classList.add('search-modal-disappeared');
+  navSearchForm.classList.remove('search-modal-appeared');
+  navSearchForm.classList.add('search-modal-disappeared');
 }
 function blurSearchInput(){
-  if(queryTerm.value===null || queryTerm.value==="" || queryTerm===" "){
+  if(navQueryTerm.value===null || navQueryTerm.value==="" || navQueryTerm===" "){
     closeSearchModal()
   }
   else{
@@ -32,7 +32,7 @@ function blurSearchInput(){
 }
 function navSearch(){
 
-  window.location.href=`search.html?keyword=${queryTerm.value}`;
+  window.location.href=`search.html?keyword=${navQueryTerm.value}`;
   return false;
 }
 function searchSubmit(){
