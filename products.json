@@ -266,5 +266,25 @@
    "readMoreLink":"https://www.lumiradx.com/uk-en/test-menu/sars-cov-2-and-rsv",  
    "downloadLink":"https://assets.lumiradx.com/m/5725ac996a309ebc/original/SARS-CoV-2-RSV-Test-Strip-Product-Insert-EN-only.pdf",
    "description":"Verify potential infection and help guide infection control measures quickly with a rapid microfluidic assay that provides actionable results in 12 minutes, for patients suspected of RSV and/or COVID-19."
+},{    
+   "id":"31",
+   "name": "Alinity h-series integrated hematology system",    
+   "category": "integratedImmunoChemistry",    
+   "image": "media/products/alinity-h-series.png",  
+   "manufacturer":"Abbott",
+   "readMoreLink":"https://www.corelaboratory.abbott/int/en/offerings/brands/alinity/Alinity-h-hematology-system.html",  
+   "downloadLink":"",
+   "description":"Alinity h-series is designed to deliver reliable results needed by the busy hematology laboratory and is anchored on user feedback to ensure that the laboratory operates efficiently.Delivers simplified workflows through an innovative design to streamline the hematology laboratory."
+},
+{
+   "id":"32",
+   "name":"MEDICA® EDI 15/30",
+   "category":"waterPurification",
+   "manufacturer":"Elga veolia",
+   "image":"media/products/MEDICA 7_15_EDI15_30.jpg",
+   "readMoreLink":"https://www.elgalabwater.com/medica-edi-15-30",
+   "downloadLink":"",
+   "description":"Designed to supply CLRW grade water to a single analyzer. The MEDICA EDI 15/30 is the ideal system to provide predictable consumables usage, reducing the number of interventions.The MEDICA EDI 15/30 is a compact, high-performance water purification system that directly feeds Clinical Diagnostic Analyzers with up to 1.5 l/min of CLRW standard grade water. The MEDICA EDI incorporates EDI ‘Pulse Technology’ using Electrodeionization (EDI). Innovative technology, combined with its unique features, makes the MEDICA EDI 15/30 a highly reliable and cost-effective choice."
 }
 ]
+

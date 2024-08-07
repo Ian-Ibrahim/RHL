@@ -25,6 +25,15 @@
         
     </div>
     <nav class="px-2 py-3 bg-white border-gray-200 ">
+        <div class="top-bar  w-full left-0 top-0 bg-[#085F9E] text-[#F3F3F7] z-0 hidden  lg:flex flex-nowrap items-center justify-between ">
+            <div class="float-right  ml-auto m-2">
+                <a href="https://goo.gl/maps/5NdJt6xVfyQx4mQR9" target="_blank" class="flex flex-nowrap items-center justify-between hover:underline " > Alpha Centre Mombasa Road, Godown No 67(A)      </a>
+            </div>
+            <div class="flex flex-nowrap items-center justify-between m-2" >
+                <a href="mailto:info@renaissancehealth-kenya.com " class="hover:underline"> info@renaissancehealth-kenya.com </a>
+            </div>
+
+        </div>
         <div class="container flex flex-wrap items-center justify-between mx-auto">
             <a href="index.html" class="flex items-center justify-center lg:h-20">
                 <img src="media/RHL_SUBMARK.svg" class="mr-3 h-16" alt="Renaissance Health limited logo" />
@@ -64,7 +73,7 @@
                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('informatics')">Informatics</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('pointOfCare')">Point of care</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 " onclick="openCategoryPage('waterPurification')">Water Purification</a>
                             </li>
                         </ul>
                         
@@ -139,7 +148,7 @@
                 <div class=" flex flex-wrap justify-between items-start lg:w-[50vw] p-5">
                     <h1 class="header-column text-base">About us</h1>
                     <h2 class="text-4xl basis-full mb-4">We are Renaissance Health Limited.</h2>
-                    <p>Established in 2018, Renaissance Health Limited is a strong industry leader distinguished by her core corporate values that places people at the center of everything. We have continued to provide our clients with trusted and quality products and services over the years. Renaissance Health Limited has a unique distribution and marketing network of more than 25 medical sales representatives and medical engineer. The company is managed by highly experience directors with diverse backgrounds and skill set. </p>
+                    <p>Established in 2018, Renaissance Health Limited is a strong industry leader distinguished by her core corporate values that places people at the center of everything. We have continued to provide our clients with trusted and quality products and services over the years. Renaissance Health Limited has a unique distribution and marketing network. </p>
                     <a href="about.html" class="btn-primary rounded-full  mt-5 bg-[#085F9E] text-white p-3">More about us</a>
                 </div>
             </div>
@@ -320,14 +329,14 @@
                             </a>
                         </div>
                     </div>
-                    <div onclick="openCategoryPage('pointOfCare')" class="card cursor-pointer max-w-sm w-[15rem] p-6 h-96  bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
+                    <div onclick="openCategoryPage('waterPurification')" class="card cursor-pointer max-w-sm w-[15rem] p-6 h-96  bg-white border border-gray-200  flex items-center flex-wrap justify-between text-center">
                         <a href="#" class=" items-center flex justify-center w-full">
-                            <img class="rounded-t-lg w-28 h-28" src="media/icons/pointOfCare.png" alt="" />
+                            <img class="rounded-t-lg w-28 h-28" src="media/icons/waterPurification.png" alt="" />
                         </a>
                         <div class="basis-full h-0"></div>
                         <div class="p-5 text-center  w-full">
                             <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Point of care</h5>
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Water Purification</h5>
                             </a>
                             <a href="#" class="inline-flex items-center text-[#1E1E24] hover:underline">
                                 View products
@@ -360,8 +369,10 @@
         <div class="partners bg-[#085F9E] text-center text-white flex flex-wrap justify-center items-center">
             <h1 class="header-center text-4xl">Our partners</h1>
             <div class="partners-container flex flex-wrap justify-center p-5">
-                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" src="media/icons/lumira-logo-horizontal.jpg" alt=""></div>
-                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" src="media/icons/Logo_Abbott_Laboratories..png" alt=""></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" src="media/icons/Logo_Abbott_Laboratories..png" alt="Abbott logo"></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" src="media/icons/Thermo Fisher Scientific.svg" alt="Thermo fischer logo"></div>
+                <div class="icon-hexagon w-48 h-40 bg-white m-2 flex justify-center items-center"><img class="w-32 h-64 object-center object-contain" src="media/icons/elga-logo-big_1_0_1.webp" alt="Elga logo"></div>
+
             </div>
         </div>
     </section>
@@ -437,7 +448,7 @@
                             <a href="#" class="footer-links hover:underline" onclick="openCategoryPage('informatics')"><i class="fa-solid fa-arrow-right pr-2"></i>Informatics</a>
                         </li>
                         <li>
-                            <a href="#" class="footer-links hover:underline"onclick="openCategoryPage('pointOfCare')"><i class="fa-solid fa-arrow-right pr-2"></i>Point of Care</a>
+                            <a href="#" class="footer-links hover:underline"onclick="openCategoryPage('waterPurification')"><i class="fa-solid fa-arrow-right pr-2"></i>Water Purification</a>
                         </li>
                     </ul>
                 </div>
@@ -448,15 +459,18 @@
                             <a href="https://goo.gl/maps/5NdJt6xVfyQx4mQR9" class="hover:underline">Location: Alpha Centre Mombasa Rd, Godown No 67</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Email:sales@RHL.co.ke</a>
+                            <a href="mailto:info@renaissancehealth-kenya.com" class="hover:underline">Email:info@renaissancehealth-kenya.com</a>
+                        </li>
+                        <li class="mb-4 ">
+                            <a href="tel:+254705984252" class="hover:underline">Mobile: +2547 05 984 252</a>
+                            <br>
+                            <a href="tel:0113874468" class="hover:underline">Mobile: 0113874468</a>
                         </li>
                         <li class="mb-4">
                             
-                            <a href="tel:+2540202400243" class="hover:underline">Phone:+254-020-2400243</a>
+                            <a href="tel:0202400243" class="hover:underline">Phone: 0202400243</a>
                         </li>
-                        <li class="mb-4 ">
-                            <a href="tel:+254705984252" class="hover:underline">Mobile:+254-705984252</a>
-                        </li>
+                        
                         
                     </ul>
                 </div>
